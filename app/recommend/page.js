@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import cosineSimilarity from "compute-cosine-similarity";
 
 const allTags = [
@@ -21,6 +21,9 @@ export default function Recommend() {
   const [mood, setMood] = useState("Bold");
   const [k, setK] = useState(3);
   const [suggestions, setSuggestions] = useState([]);
+  const [baseCombos, setBaseCombos] = useState([]);
+  const [hasGenerated, setHasGenerated] = useState(false);
+  const lastInputRef = useRef("");
 
   useEffect(() => {
     fetch("/wardrobe_named.json")
@@ -28,46 +31,72 @@ export default function Recommend() {
       .then((data) => setWardrobe(data));
   }, []);
 
-  const tagVector = (selectedTags) => {
-    return allTags.map((tag) =>
-      selectedTags.includes(tag.toLowerCase()) ? 1 : 0
-    );
+  const tagVector = (tags) =>
+    allTags.map((tag) => (tags.includes(tag.toLowerCase()) ? 1 : 0));
+
+  const getInputKey = () => `${weather}-${occasion}-${mood}-${k}`;
+
+  const shuffle = (array) => {
+    const arr = [...array];
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
   };
 
-  const generateOutfits = () => {
-    const userTags = [
-      weather.toLowerCase(),
-      occasion.toLowerCase(),
-      mood.toLowerCase(),
-    ];
-    const userVector = tagVector(userTags);
+  const generateOrReshuffle = () => {
+    const inputKey = getInputKey();
 
-    const tops = wardrobe.filter((i) => i.type === "top");
-    const bottoms = wardrobe.filter((i) => i.type === "bottom");
-    const shoes = wardrobe.filter((i) => i.type === "shoes");
+    // If input is the same, reshuffle
+    if (inputKey === lastInputRef.current && baseCombos.length > 0) {
+      setSuggestions(shuffle(baseCombos).slice(0, Number(k)));
+    } else {
+      // New input: regenerate
+      const userTags = [
+        weather.toLowerCase(),
+        occasion.toLowerCase(),
+        mood.toLowerCase(),
+      ];
+      const userVector = tagVector(userTags);
 
-    const combinations = [];
+      const tops = wardrobe.filter((i) => i.type === "top");
+      const bottoms = wardrobe.filter((i) => i.type === "bottom");
+      const shoes = wardrobe.filter((i) => i.type === "shoes");
 
-    for (const top of tops) {
-      for (const bottom of bottoms) {
-        for (const shoe of shoes) {
-          const combinedTags = [...top.style, ...bottom.style, ...shoe.style];
-          const comboVector = tagVector(combinedTags);
-          const score = cosineSimilarity(userVector, comboVector);
-          combinations.push({ top, bottom, shoes: shoe, score });
+      const combinations = [];
+
+      for (const top of tops) {
+        for (const bottom of bottoms) {
+          for (const shoe of shoes) {
+            const comboTags = [...top.style, ...bottom.style, ...shoe.style];
+            const comboVector = tagVector(comboTags);
+            const score =
+              cosineSimilarity(userVector, comboVector) + Math.random() * 0.001;
+            combinations.push({ top, bottom, shoes: shoe, score });
+          }
         }
       }
+
+      const sorted = combinations.sort((a, b) => b.score - a.score);
+      const topCombos = sorted.slice(0, 30);
+
+      setBaseCombos(topCombos);
+      setSuggestions(shuffle(topCombos).slice(0, Number(k)));
+      lastInputRef.current = inputKey;
     }
 
-    const sorted = combinations.sort((a, b) => b.score - a.score);
-    setSuggestions(sorted.slice(0, Number(k)));
+    setHasGenerated(true);
+  };
+
+  const handleInputChange = (setter) => (e) => {
+    setter(e.target.value);
+    setHasGenerated(false); // Reset button text
   };
 
   return (
     <main className="p-8 max-w-4xl mx-auto">
-      <h1 className="text-3xl font-bold mb-4">
-        AI Outfit Recommender (KNN-style)
-      </h1>
+      <h1 className="text-3xl font-bold mb-4">AI Outfit Recommender</h1>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
         <div>
@@ -75,7 +104,7 @@ export default function Recommend() {
           <select
             className="w-full p-2 border rounded"
             value={weather}
-            onChange={(e) => setWeather(e.target.value)}
+            onChange={handleInputChange(setWeather)}
           >
             <option>Hot</option>
             <option>Cold</option>
@@ -87,7 +116,7 @@ export default function Recommend() {
           <select
             className="w-full p-2 border rounded"
             value={occasion}
-            onChange={(e) => setOccasion(e.target.value)}
+            onChange={handleInputChange(setOccasion)}
           >
             <option>Casual</option>
             <option>Formal</option>
@@ -99,7 +128,7 @@ export default function Recommend() {
           <select
             className="w-full p-2 border rounded"
             value={mood}
-            onChange={(e) => setMood(e.target.value)}
+            onChange={handleInputChange(setMood)}
           >
             <option>Minimal</option>
             <option>Bold</option>
@@ -114,44 +143,44 @@ export default function Recommend() {
             type="number"
             className="w-full p-2 border rounded"
             value={k}
-            onChange={(e) => setK(e.target.value)}
+            onChange={handleInputChange(setK)}
             min={1}
             max={50}
           />
         </div>
       </div>
 
-      <button
-        className="bg-black text-white px-6 py-2 rounded hover:bg-gray-800 mb-6"
-        onClick={generateOutfits}
-      >
-        Generate Outfit Suggestions
-      </button>
+      <div className="flex justify-start mb-6">
+        <button
+          className="bg-black text-white px-6 py-2 rounded hover:bg-gray-800"
+          onClick={generateOrReshuffle}
+        >
+          {hasGenerated
+            ? "Not My Style – Suggest Another"
+            : "Generate Outfit Suggestions"}
+        </button>
+      </div>
 
-      {suggestions.length > 0 && (
-        <div>
-          {suggestions.map((sug, index) => (
-            <div key={index} className="mb-6 border p-4 rounded shadow">
-              <h2 className="font-semibold text-lg mb-2">
-                Suggestion #{index + 1} (Score: {sug.score.toFixed(3)})
-              </h2>
-              <ul className="list-disc pl-5 space-y-1">
-                <li>
-                  <strong>🧥 Top:</strong> {sug.top.name} ({sug.top.color})
-                </li>
-                <li>
-                  <strong>👖 Bottom:</strong> {sug.bottom.name} (
-                  {sug.bottom.color})
-                </li>
-                <li>
-                  <strong>👟 Shoes:</strong> {sug.shoes.name} ({sug.shoes.color}
-                  )
-                </li>
-              </ul>
-            </div>
-          ))}
-        </div>
-      )}
+      {suggestions.length > 0 &&
+        suggestions.map((sug, index) => (
+          <div key={index} className="mb-6 border p-4 rounded shadow">
+            <h2 className="font-semibold text-lg mb-2">
+              Suggestion #{index + 1} (Score: {sug.score.toFixed(3)})
+            </h2>
+            <ul className="list-disc pl-5 space-y-1">
+              <li>
+                <strong>🧥 Top:</strong> {sug.top.name} ({sug.top.color})
+              </li>
+              <li>
+                <strong>👖 Bottom:</strong> {sug.bottom.name} (
+                {sug.bottom.color})
+              </li>
+              <li>
+                <strong>👟 Shoes:</strong> {sug.shoes.name} ({sug.shoes.color})
+              </li>
+            </ul>
+          </div>
+        ))}
     </main>
   );
 }
