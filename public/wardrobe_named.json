@@ -1,0 +1,1099 @@
+[
+  {
+    "id": 1,
+    "type": "bottom",
+    "name": "Black Cargo Pants",
+    "color": "black",
+    "style": [
+      "cold",
+      "party",
+      "neutral",
+      "hot"
+    ]
+  },
+  {
+    "id": 2,
+    "type": "bottom",
+    "name": "White Shorts",
+    "color": "white",
+    "style": [
+      "hot",
+      "cold"
+    ]
+  },
+  {
+    "id": 3,
+    "type": "bottom",
+    "name": "Black Skirt",
+    "color": "black",
+    "style": [
+      "party",
+      "rainy",
+      "formal",
+      "hot"
+    ]
+  },
+  {
+    "id": 4,
+    "type": "shoes",
+    "name": "White Boots",
+    "color": "white",
+    "style": [
+      "cold",
+      "formal",
+      "casual"
+    ]
+  },
+  {
+    "id": 5,
+    "type": "shoes",
+    "name": "Yellow Sneakers",
+    "color": "yellow",
+    "style": [
+      "neutral",
+      "formal"
+    ]
+  },
+  {
+    "id": 6,
+    "type": "bottom",
+    "name": "Yellow Skirt",
+    "color": "yellow",
+    "style": [
+      "party",
+      "bold"
+    ]
+  },
+  {
+    "id": 7,
+    "type": "top",
+    "name": "Blue T-Shirt",
+    "color": "blue",
+    "style": [
+      "rainy",
+      "formal",
+      "minimal"
+    ]
+  },
+  {
+    "id": 8,
+    "type": "top",
+    "name": "Blue Blouse",
+    "color": "blue",
+    "style": [
+      "formal",
+      "neutral",
+      "party",
+      "casual"
+    ]
+  },
+  {
+    "id": 9,
+    "type": "top",
+    "name": "Black Blouse",
+    "color": "black",
+    "style": [
+      "party",
+      "cold",
+      "minimal",
+      "bold"
+    ]
+  },
+  {
+    "id": 10,
+    "type": "shoes",
+    "name": "Gray Sneakers",
+    "color": "gray",
+    "style": [
+      "rainy",
+      "casual"
+    ]
+  },
+  {
+    "id": 11,
+    "type": "shoes",
+    "name": "White Boots",
+    "color": "white",
+    "style": [
+      "party",
+      "cold"
+    ]
+  },
+  {
+    "id": 12,
+    "type": "top",
+    "name": "Yellow Denim Jacket",
+    "color": "yellow",
+    "style": [
+      "hot",
+      "cold"
+    ]
+  },
+  {
+    "id": 13,
+    "type": "bottom",
+    "name": "White Skirt",
+    "color": "white",
+    "style": [
+      "party",
+      "bold",
+      "cold"
+    ]
+  },
+  {
+    "id": 14,
+    "type": "bottom",
+    "name": "Red Cargo Pants",
+    "color": "red",
+    "style": [
+      "rainy",
+      "party",
+      "bold",
+      "hot"
+    ]
+  },
+  {
+    "id": 15,
+    "type": "bottom",
+    "name": "Gray Shorts",
+    "color": "gray",
+    "style": [
+      "minimal",
+      "neutral",
+      "cold"
+    ]
+  },
+  {
+    "id": 16,
+    "type": "shoes",
+    "name": "Yellow Heels",
+    "color": "yellow",
+    "style": [
+      "formal",
+      "bold"
+    ]
+  },
+  {
+    "id": 17,
+    "type": "bottom",
+    "name": "Red Jeans",
+    "color": "red",
+    "style": [
+      "casual",
+      "hot"
+    ]
+  },
+  {
+    "id": 18,
+    "type": "top",
+    "name": "Gray Sweater",
+    "color": "gray",
+    "style": [
+      "neutral",
+      "hot",
+      "bold"
+    ]
+  },
+  {
+    "id": 19,
+    "type": "shoes",
+    "name": "Gray Sneakers",
+    "color": "gray",
+    "style": [
+      "party",
+      "neutral",
+      "bold",
+      "rainy"
+    ]
+  },
+  {
+    "id": 20,
+    "type": "bottom",
+    "name": "Yellow Jeans",
+    "color": "yellow",
+    "style": [
+      "minimal",
+      "party",
+      "cold",
+      "bold"
+    ]
+  },
+  {
+    "id": 21,
+    "type": "bottom",
+    "name": "Blue Skirt",
+    "color": "blue",
+    "style": [
+      "bold",
+      "minimal",
+      "formal"
+    ]
+  },
+  {
+    "id": 22,
+    "type": "shoes",
+    "name": "Beige Loafers",
+    "color": "beige",
+    "style": [
+      "casual",
+      "bold",
+      "hot"
+    ]
+  },
+  {
+    "id": 23,
+    "type": "shoes",
+    "name": "Beige Sandals",
+    "color": "beige",
+    "style": [
+      "cold",
+      "formal",
+      "party"
+    ]
+  },
+  {
+    "id": 24,
+    "type": "shoes",
+    "name": "White Sandals",
+    "color": "white",
+    "style": [
+      "cold",
+      "bold",
+      "formal",
+      "neutral"
+    ]
+  },
+  {
+    "id": 25,
+    "type": "bottom",
+    "name": "Gray Cargo Pants",
+    "color": "gray",
+    "style": [
+      "minimal",
+      "party",
+      "hot"
+    ]
+  },
+  {
+    "id": 26,
+    "type": "bottom",
+    "name": "Blue Cargo Pants",
+    "color": "blue",
+    "style": [
+      "minimal",
+      "rainy"
+    ]
+  },
+  {
+    "id": 27,
+    "type": "top",
+    "name": "Yellow Sweater",
+    "color": "yellow",
+    "style": [
+      "rainy",
+      "hot"
+    ]
+  },
+  {
+    "id": 28,
+    "type": "bottom",
+    "name": "Black Trousers",
+    "color": "black",
+    "style": [
+      "cold",
+      "rainy",
+      "party",
+      "hot"
+    ]
+  },
+  {
+    "id": 29,
+    "type": "shoes",
+    "name": "Blue Loafers",
+    "color": "blue",
+    "style": [
+      "formal",
+      "hot",
+      "bold"
+    ]
+  },
+  {
+    "id": 30,
+    "type": "shoes",
+    "name": "Green Boots",
+    "color": "green",
+    "style": [
+      "rainy",
+      "casual"
+    ]
+  },
+  {
+    "id": 31,
+    "type": "bottom",
+    "name": "Gray Trousers",
+    "color": "gray",
+    "style": [
+      "cold",
+      "neutral",
+      "formal"
+    ]
+  },
+  {
+    "id": 32,
+    "type": "shoes",
+    "name": "Beige Boots",
+    "color": "beige",
+    "style": [
+      "formal",
+      "rainy",
+      "casual"
+    ]
+  },
+  {
+    "id": 33,
+    "type": "shoes",
+    "name": "Yellow Loafers",
+    "color": "yellow",
+    "style": [
+      "neutral",
+      "party"
+    ]
+  },
+  {
+    "id": 34,
+    "type": "top",
+    "name": "Black T-Shirt",
+    "color": "black",
+    "style": [
+      "party",
+      "rainy",
+      "hot",
+      "formal"
+    ]
+  },
+  {
+    "id": 35,
+    "type": "shoes",
+    "name": "Beige Boots",
+    "color": "beige",
+    "style": [
+      "party",
+      "cold",
+      "casual"
+    ]
+  },
+  {
+    "id": 36,
+    "type": "shoes",
+    "name": "Blue Sandals",
+    "color": "blue",
+    "style": [
+      "cold",
+      "formal",
+      "neutral"
+    ]
+  },
+  {
+    "id": 37,
+    "type": "top",
+    "name": "Gray Denim Jacket",
+    "color": "gray",
+    "style": [
+      "cold",
+      "hot",
+      "bold",
+      "formal"
+    ]
+  },
+  {
+    "id": 38,
+    "type": "top",
+    "name": "Yellow Denim Jacket",
+    "color": "yellow",
+    "style": [
+      "party",
+      "cold"
+    ]
+  },
+  {
+    "id": 39,
+    "type": "top",
+    "name": "Beige Denim Jacket",
+    "color": "beige",
+    "style": [
+      "party",
+      "bold"
+    ]
+  },
+  {
+    "id": 40,
+    "type": "bottom",
+    "name": "Blue Skirt",
+    "color": "blue",
+    "style": [
+      "hot",
+      "cold",
+      "neutral",
+      "rainy"
+    ]
+  },
+  {
+    "id": 41,
+    "type": "top",
+    "name": "White Blouse",
+    "color": "white",
+    "style": [
+      "casual",
+      "cold",
+      "hot",
+      "minimal"
+    ]
+  },
+  {
+    "id": 42,
+    "type": "top",
+    "name": "Black Blouse",
+    "color": "black",
+    "style": [
+      "cold",
+      "hot"
+    ]
+  },
+  {
+    "id": 43,
+    "type": "bottom",
+    "name": "Gray Trousers",
+    "color": "gray",
+    "style": [
+      "formal",
+      "rainy"
+    ]
+  },
+  {
+    "id": 44,
+    "type": "shoes",
+    "name": "Blue Sandals",
+    "color": "blue",
+    "style": [
+      "bold",
+      "rainy",
+      "neutral",
+      "formal"
+    ]
+  },
+  {
+    "id": 45,
+    "type": "bottom",
+    "name": "Green Skirt",
+    "color": "green",
+    "style": [
+      "casual",
+      "rainy"
+    ]
+  },
+  {
+    "id": 46,
+    "type": "bottom",
+    "name": "Black Cargo Pants",
+    "color": "black",
+    "style": [
+      "rainy",
+      "casual",
+      "minimal"
+    ]
+  },
+  {
+    "id": 47,
+    "type": "top",
+    "name": "Gray Blouse",
+    "color": "gray",
+    "style": [
+      "rainy",
+      "cold"
+    ]
+  },
+  {
+    "id": 48,
+    "type": "top",
+    "name": "Gray Linen Shirt",
+    "color": "gray",
+    "style": [
+      "rainy",
+      "formal",
+      "hot"
+    ]
+  },
+  {
+    "id": 49,
+    "type": "top",
+    "name": "Green Blouse",
+    "color": "green",
+    "style": [
+      "formal",
+      "minimal",
+      "rainy"
+    ]
+  },
+  {
+    "id": 50,
+    "type": "shoes",
+    "name": "Gray Loafers",
+    "color": "gray",
+    "style": [
+      "neutral",
+      "cold",
+      "rainy",
+      "formal"
+    ]
+  },
+  {
+    "id": 51,
+    "type": "shoes",
+    "name": "White Sandals",
+    "color": "white",
+    "style": [
+      "bold",
+      "hot"
+    ]
+  },
+  {
+    "id": 52,
+    "type": "top",
+    "name": "Red Linen Shirt",
+    "color": "red",
+    "style": [
+      "hot",
+      "casual",
+      "rainy"
+    ]
+  },
+  {
+    "id": 53,
+    "type": "bottom",
+    "name": "Yellow Shorts",
+    "color": "yellow",
+    "style": [
+      "casual",
+      "party",
+      "hot"
+    ]
+  },
+  {
+    "id": 54,
+    "type": "top",
+    "name": "White Sweater",
+    "color": "white",
+    "style": [
+      "bold",
+      "minimal",
+      "hot",
+      "formal"
+    ]
+  },
+  {
+    "id": 55,
+    "type": "bottom",
+    "name": "Beige Skirt",
+    "color": "beige",
+    "style": [
+      "cold",
+      "bold",
+      "formal",
+      "neutral"
+    ]
+  },
+  {
+    "id": 56,
+    "type": "shoes",
+    "name": "Green Boots",
+    "color": "green",
+    "style": [
+      "rainy",
+      "bold"
+    ]
+  },
+  {
+    "id": 57,
+    "type": "bottom",
+    "name": "White Jeans",
+    "color": "white",
+    "style": [
+      "casual",
+      "rainy",
+      "bold",
+      "formal"
+    ]
+  },
+  {
+    "id": 58,
+    "type": "shoes",
+    "name": "Green Sandals",
+    "color": "green",
+    "style": [
+      "party",
+      "hot",
+      "cold"
+    ]
+  },
+  {
+    "id": 59,
+    "type": "bottom",
+    "name": "White Trousers",
+    "color": "white",
+    "style": [
+      "casual",
+      "hot",
+      "bold",
+      "party"
+    ]
+  },
+  {
+    "id": 60,
+    "type": "bottom",
+    "name": "White Skirt",
+    "color": "white",
+    "style": [
+      "bold",
+      "party"
+    ]
+  },
+  {
+    "id": 61,
+    "type": "shoes",
+    "name": "Green Boots",
+    "color": "green",
+    "style": [
+      "rainy",
+      "bold"
+    ]
+  },
+  {
+    "id": 62,
+    "type": "top",
+    "name": "Beige Denim Jacket",
+    "color": "beige",
+    "style": [
+      "party",
+      "bold",
+      "casual",
+      "cold"
+    ]
+  },
+  {
+    "id": 63,
+    "type": "top",
+    "name": "Gray Blouse",
+    "color": "gray",
+    "style": [
+      "hot",
+      "minimal",
+      "formal",
+      "party"
+    ]
+  },
+  {
+    "id": 64,
+    "type": "top",
+    "name": "Yellow Denim Jacket",
+    "color": "yellow",
+    "style": [
+      "bold",
+      "casual",
+      "cold",
+      "neutral"
+    ]
+  },
+  {
+    "id": 65,
+    "type": "shoes",
+    "name": "Beige Loafers",
+    "color": "beige",
+    "style": [
+      "casual",
+      "neutral"
+    ]
+  },
+  {
+    "id": 66,
+    "type": "top",
+    "name": "White Denim Jacket",
+    "color": "white",
+    "style": [
+      "casual",
+      "rainy"
+    ]
+  },
+  {
+    "id": 67,
+    "type": "bottom",
+    "name": "Green Shorts",
+    "color": "green",
+    "style": [
+      "party",
+      "neutral",
+      "minimal"
+    ]
+  },
+  {
+    "id": 68,
+    "type": "bottom",
+    "name": "Red Cargo Pants",
+    "color": "red",
+    "style": [
+      "cold",
+      "minimal",
+      "formal",
+      "casual"
+    ]
+  },
+  {
+    "id": 69,
+    "type": "bottom",
+    "name": "White Jeans",
+    "color": "white",
+    "style": [
+      "formal",
+      "minimal"
+    ]
+  },
+  {
+    "id": 70,
+    "type": "shoes",
+    "name": "White Loafers",
+    "color": "white",
+    "style": [
+      "party",
+      "casual"
+    ]
+  },
+  {
+    "id": 71,
+    "type": "shoes",
+    "name": "Green Heels",
+    "color": "green",
+    "style": [
+      "neutral",
+      "rainy",
+      "casual"
+    ]
+  },
+  {
+    "id": 72,
+    "type": "bottom",
+    "name": "White Trousers",
+    "color": "white",
+    "style": [
+      "cold",
+      "minimal"
+    ]
+  },
+  {
+    "id": 73,
+    "type": "bottom",
+    "name": "Blue Jeans",
+    "color": "blue",
+    "style": [
+      "bold",
+      "neutral"
+    ]
+  },
+  {
+    "id": 74,
+    "type": "bottom",
+    "name": "Red Shorts",
+    "color": "red",
+    "style": [
+      "rainy",
+      "formal",
+      "hot"
+    ]
+  },
+  {
+    "id": 75,
+    "type": "bottom",
+    "name": "Blue Jeans",
+    "color": "blue",
+    "style": [
+      "bold",
+      "rainy"
+    ]
+  },
+  {
+    "id": 76,
+    "type": "shoes",
+    "name": "White Boots",
+    "color": "white",
+    "style": [
+      "formal",
+      "cold",
+      "hot"
+    ]
+  },
+  {
+    "id": 77,
+    "type": "shoes",
+    "name": "White Boots",
+    "color": "white",
+    "style": [
+      "cold",
+      "formal",
+      "casual",
+      "bold"
+    ]
+  },
+  {
+    "id": 78,
+    "type": "bottom",
+    "name": "White Trousers",
+    "color": "white",
+    "style": [
+      "rainy",
+      "party"
+    ]
+  },
+  {
+    "id": 79,
+    "type": "shoes",
+    "name": "Beige Loafers",
+    "color": "beige",
+    "style": [
+      "hot",
+      "formal",
+      "party",
+      "rainy"
+    ]
+  },
+  {
+    "id": 80,
+    "type": "top",
+    "name": "White Denim Jacket",
+    "color": "white",
+    "style": [
+      "cold",
+      "hot"
+    ]
+  },
+  {
+    "id": 81,
+    "type": "bottom",
+    "name": "Blue Jeans",
+    "color": "blue",
+    "style": [
+      "bold",
+      "minimal"
+    ]
+  },
+  {
+    "id": 82,
+    "type": "bottom",
+    "name": "Green Jeans",
+    "color": "green",
+    "style": [
+      "party",
+      "cold",
+      "formal",
+      "rainy"
+    ]
+  },
+  {
+    "id": 83,
+    "type": "bottom",
+    "name": "Yellow Skirt",
+    "color": "yellow",
+    "style": [
+      "formal",
+      "minimal"
+    ]
+  },
+  {
+    "id": 84,
+    "type": "top",
+    "name": "Beige T-Shirt",
+    "color": "beige",
+    "style": [
+      "formal",
+      "hot",
+      "rainy",
+      "party"
+    ]
+  },
+  {
+    "id": 85,
+    "type": "shoes",
+    "name": "Beige Boots",
+    "color": "beige",
+    "style": [
+      "minimal",
+      "hot",
+      "bold",
+      "casual"
+    ]
+  },
+  {
+    "id": 86,
+    "type": "top",
+    "name": "Red Blouse",
+    "color": "red",
+    "style": [
+      "bold",
+      "neutral",
+      "hot"
+    ]
+  },
+  {
+    "id": 87,
+    "type": "bottom",
+    "name": "White Shorts",
+    "color": "white",
+    "style": [
+      "casual",
+      "hot",
+      "party"
+    ]
+  },
+  {
+    "id": 88,
+    "type": "top",
+    "name": "Blue T-Shirt",
+    "color": "blue",
+    "style": [
+      "formal",
+      "cold",
+      "casual",
+      "hot"
+    ]
+  },
+  {
+    "id": 89,
+    "type": "shoes",
+    "name": "White Boots",
+    "color": "white",
+    "style": [
+      "formal",
+      "neutral",
+      "casual"
+    ]
+  },
+  {
+    "id": 90,
+    "type": "bottom",
+    "name": "Gray Cargo Pants",
+    "color": "gray",
+    "style": [
+      "rainy",
+      "hot",
+      "minimal"
+    ]
+  },
+  {
+    "id": 91,
+    "type": "top",
+    "name": "White Denim Jacket",
+    "color": "white",
+    "style": [
+      "rainy",
+      "bold",
+      "cold",
+      "neutral"
+    ]
+  },
+  {
+    "id": 92,
+    "type": "bottom",
+    "name": "Blue Jeans",
+    "color": "blue",
+    "style": [
+      "hot",
+      "cold"
+    ]
+  },
+  {
+    "id": 93,
+    "type": "top",
+    "name": "Gray Linen Shirt",
+    "color": "gray",
+    "style": [
+      "rainy",
+      "cold",
+      "casual"
+    ]
+  },
+  {
+    "id": 94,
+    "type": "top",
+    "name": "Green T-Shirt",
+    "color": "green",
+    "style": [
+      "neutral",
+      "hot"
+    ]
+  },
+  {
+    "id": 95,
+    "type": "top",
+    "name": "Blue Denim Jacket",
+    "color": "blue",
+    "style": [
+      "minimal",
+      "formal",
+      "bold",
+      "cold"
+    ]
+  },
+  {
+    "id": 96,
+    "type": "bottom",
+    "name": "Gray Cargo Pants",
+    "color": "gray",
+    "style": [
+      "formal",
+      "neutral",
+      "cold"
+    ]
+  },
+  {
+    "id": 97,
+    "type": "bottom",
+    "name": "White Jeans",
+    "color": "white",
+    "style": [
+      "formal",
+      "hot",
+      "party",
+      "neutral"
+    ]
+  },
+  {
+    "id": 98,
+    "type": "top",
+    "name": "Green Sweater",
+    "color": "green",
+    "style": [
+      "cold",
+      "party",
+      "formal",
+      "bold"
+    ]
+  },
+  {
+    "id": 99,
+    "type": "top",
+    "name": "White Denim Jacket",
+    "color": "white",
+    "style": [
+      "casual",
+      "rainy",
+      "cold"
+    ]
+  },
+  {
+    "id": 100,
+    "type": "shoes",
+    "name": "Beige Sandals",
+    "color": "beige",
+    "style": [
+      "formal",
+      "minimal"
+    ]
+  }
+]
