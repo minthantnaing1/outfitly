@@ -1,24 +1,24 @@
 // Removed AI SDK imports as we are no longer using its streaming capabilities
 // import { StreamingTextResponse } from 'ai';
-
+ 
 export const runtime = 'edge';
-
+ 
 export async function POST(req) {
   try {
     // Construct absolute base URL for internal API calls
     const host = req.headers.get('host');
     const protocol = process.env.NODE_ENV === 'development' ? 'http' : 'https';
     const baseUrl = `${protocol}://${host}`;
-
+ 
     const { messages } = await req.json();
     console.log('API Route: Received messages from client:', JSON.stringify(messages, null, 2));
-
+ 
     const lastMessage = messages?.[messages.length - 1]?.content?.toLowerCase() || "";
     let replyParts = []; // This will now be an array of parts (text or image)
-
+ 
     // Generate a random page number for Pexels API to get different results
     const randomPage = Math.floor(Math.random() * 10) + 1; // Random page between 1 and 10
-
+ 
     if (lastMessage.includes("hi")) {
       replyParts.push({ type: 'text', content: "👋 Hi there! I'm Outfitly, your personal AI stylist. How can I help you today?" });
     } else if (lastMessage.includes("what should i wear today")) {
@@ -88,9 +88,9 @@ export async function POST(req) {
     } else {
       replyParts.push({ type: 'text', content: "👗 Hello! I'm your AI stylist. Ask me what to wear!" });
     }
-
+ 
     console.log('API Route: Generating simple response with parts:', replyParts);
-
+ 
     // Return a standard JSON response with an array of content parts
     return new Response(JSON.stringify({
       id: Date.now().toString(), // Unique ID for the message
@@ -100,7 +100,7 @@ export async function POST(req) {
       status: 200,
       headers: { "Content-Type": "application/json" }
     });
-
+ 
   } catch (error) {
     console.error('API Route Error:', error);
     // Return a more informative error response to the client
@@ -110,3 +110,7 @@ export async function POST(req) {
     });
   }
 }
+ 
+ 
+
+ 
