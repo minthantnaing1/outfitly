@@ -1,50 +1,20 @@
-
-// import { Geist, Geist_Mono } from 'next/font/google';
-// import "./globals.css";
-
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
-
-// export const metadata = {
-//   title: "Outfitly - Your Personal AI Fashion Stylist",
-//   description: "Outfitly helps you decide what to wear based on your wardrobe, mood, and the weather.",
-// };
-
-// export default function RootLayout({ children }) {
-//   return (
-//     <html lang="en">
-//       <body
-//         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-//       >
-//         {children}
-//       </body>
-//     </html>
-//   );
-// }
-import { Geist, Geist_Mono } from 'next/font/google';
-import './globals.css';
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
 
 const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
 });
 
 const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
 });
 
 export const metadata = {
-  title: 'Outfitly - Your Personal AI Fashion Stylist',
+  title: "Outfitly - Your Personal AI Fashion Stylist",
   description:
-    'Outfitly helps you decide what to wear based on your wardrobe, mood, and the weather.',
+    "Outfitly helps you decide what to wear based on your wardrobe, mood, and the weather.",
 };
 
 export default function RootLayout({ children }) {
