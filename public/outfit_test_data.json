@@ -1,0 +1,752 @@
+[
+  {
+    "top": {
+      "name": "Grey Hoodie",
+      "color": "Grey"
+    },
+    "bottom": {
+      "name": "Brown Trousers",
+      "color": "Brown"
+    },
+    "shoes": {
+      "name": "Brown Loafers",
+      "color": "Brown"
+    },
+    "tags": ["hot", "bold", "formal"]
+  },
+  {
+    "top": {
+      "name": "Red Blouse",
+      "color": "Red"
+    },
+    "bottom": {
+      "name": "Brown Trousers",
+      "color": "Brown"
+    },
+    "shoes": {
+      "name": "Red Heels",
+      "color": "Red"
+    },
+    "tags": ["casual", "cold", "neutral"]
+  },
+  {
+    "top": {
+      "name": "Red Blouse",
+      "color": "Red"
+    },
+    "bottom": {
+      "name": "Grey Pants",
+      "color": "Grey"
+    },
+    "shoes": {
+      "name": "Red Heels",
+      "color": "Red"
+    },
+    "tags": ["formal", "minimal", "rainy"]
+  },
+  {
+    "top": {
+      "name": "Red Blouse",
+      "color": "Red"
+    },
+    "bottom": {
+      "name": "Brown Trousers",
+      "color": "Brown"
+    },
+    "shoes": {
+      "name": "Red Heels",
+      "color": "Red"
+    },
+    "tags": ["formal", "bold", "rainy"]
+  },
+  {
+    "top": {
+      "name": "Blue Sweater",
+      "color": "Blue"
+    },
+    "bottom": {
+      "name": "Blue Jeans",
+      "color": "Blue"
+    },
+    "shoes": {
+      "name": "Blue Sandals",
+      "color": "Blue"
+    },
+    "tags": ["casual", "cold", "bold"]
+  },
+  {
+    "top": {
+      "name": "White Shirt",
+      "color": "White"
+    },
+    "bottom": {
+      "name": "Grey Pants",
+      "color": "Grey"
+    },
+    "shoes": {
+      "name": "White Sneakers",
+      "color": "White"
+    },
+    "tags": ["casual", "minimal", "rainy"]
+  },
+  {
+    "top": {
+      "name": "Black T-Shirt",
+      "color": "Black"
+    },
+    "bottom": {
+      "name": "Brown Trousers",
+      "color": "Brown"
+    },
+    "shoes": {
+      "name": "Brown Loafers",
+      "color": "Brown"
+    },
+    "tags": ["casual", "hot", "bold"]
+  },
+  {
+    "top": {
+      "name": "Blue Sweater",
+      "color": "Blue"
+    },
+    "bottom": {
+      "name": "Brown Trousers",
+      "color": "Brown"
+    },
+    "shoes": {
+      "name": "Blue Sandals",
+      "color": "Blue"
+    },
+    "tags": ["cold", "party", "neutral"]
+  },
+  {
+    "top": {
+      "name": "White Shirt",
+      "color": "White"
+    },
+    "bottom": {
+      "name": "Brown Trousers",
+      "color": "Brown"
+    },
+    "shoes": {
+      "name": "Brown Loafers",
+      "color": "Brown"
+    },
+    "tags": ["cold", "bold", "party"]
+  },
+  {
+    "top": {
+      "name": "Black T-Shirt",
+      "color": "Black"
+    },
+    "bottom": {
+      "name": "Grey Pants",
+      "color": "Grey"
+    },
+    "shoes": {
+      "name": "White Sneakers",
+      "color": "White"
+    },
+    "tags": ["casual", "cold", "neutral"]
+  },
+  {
+    "top": {
+      "name": "Blue Sweater",
+      "color": "Blue"
+    },
+    "bottom": {
+      "name": "Brown Trousers",
+      "color": "Brown"
+    },
+    "shoes": {
+      "name": "Red Heels",
+      "color": "Red"
+    },
+    "tags": ["hot", "bold", "formal"]
+  },
+  {
+    "top": {
+      "name": "Blue Sweater",
+      "color": "Blue"
+    },
+    "bottom": {
+      "name": "Blue Jeans",
+      "color": "Blue"
+    },
+    "shoes": {
+      "name": "White Sneakers",
+      "color": "White"
+    },
+    "tags": ["formal", "minimal", "rainy"]
+  },
+  {
+    "top": {
+      "name": "Black T-Shirt",
+      "color": "Black"
+    },
+    "bottom": {
+      "name": "Blue Jeans",
+      "color": "Blue"
+    },
+    "shoes": {
+      "name": "Brown Loafers",
+      "color": "Brown"
+    },
+    "tags": ["cold", "bold", "formal"]
+  },
+  {
+    "top": {
+      "name": "Grey Hoodie",
+      "color": "Grey"
+    },
+    "bottom": {
+      "name": "Grey Pants",
+      "color": "Grey"
+    },
+    "shoes": {
+      "name": "Brown Loafers",
+      "color": "Brown"
+    },
+    "tags": ["formal", "minimal", "rainy"]
+  },
+  {
+    "top": {
+      "name": "White Shirt",
+      "color": "White"
+    },
+    "bottom": {
+      "name": "Black Skirt",
+      "color": "Black"
+    },
+    "shoes": {
+      "name": "Black Boots",
+      "color": "Black"
+    },
+    "tags": ["cold", "bold", "formal"]
+  },
+  {
+    "top": {
+      "name": "Blue Sweater",
+      "color": "Blue"
+    },
+    "bottom": {
+      "name": "Black Skirt",
+      "color": "Black"
+    },
+    "shoes": {
+      "name": "Brown Loafers",
+      "color": "Brown"
+    },
+    "tags": ["cold", "minimal", "party"]
+  },
+  {
+    "top": {
+      "name": "White Shirt",
+      "color": "White"
+    },
+    "bottom": {
+      "name": "Brown Trousers",
+      "color": "Brown"
+    },
+    "shoes": {
+      "name": "Blue Sandals",
+      "color": "Blue"
+    },
+    "tags": ["hot", "minimal", "formal"]
+  },
+  {
+    "top": {
+      "name": "Blue Sweater",
+      "color": "Blue"
+    },
+    "bottom": {
+      "name": "Black Skirt",
+      "color": "Black"
+    },
+    "shoes": {
+      "name": "Black Boots",
+      "color": "Black"
+    },
+    "tags": ["casual", "rainy", "neutral"]
+  },
+  {
+    "top": {
+      "name": "Grey Hoodie",
+      "color": "Grey"
+    },
+    "bottom": {
+      "name": "Brown Trousers",
+      "color": "Brown"
+    },
+    "shoes": {
+      "name": "Red Heels",
+      "color": "Red"
+    },
+    "tags": ["formal", "rainy", "neutral"]
+  },
+  {
+    "top": {
+      "name": "Red Blouse",
+      "color": "Red"
+    },
+    "bottom": {
+      "name": "White Shorts",
+      "color": "White"
+    },
+    "shoes": {
+      "name": "White Sneakers",
+      "color": "White"
+    },
+    "tags": ["formal", "minimal", "rainy"]
+  },
+  {
+    "top": {
+      "name": "White Shirt",
+      "color": "White"
+    },
+    "bottom": {
+      "name": "Grey Pants",
+      "color": "Grey"
+    },
+    "shoes": {
+      "name": "Red Heels",
+      "color": "Red"
+    },
+    "tags": ["casual", "bold", "rainy"]
+  },
+  {
+    "top": {
+      "name": "Black T-Shirt",
+      "color": "Black"
+    },
+    "bottom": {
+      "name": "Blue Jeans",
+      "color": "Blue"
+    },
+    "shoes": {
+      "name": "Blue Sandals",
+      "color": "Blue"
+    },
+    "tags": ["cold", "party", "neutral"]
+  },
+  {
+    "top": {
+      "name": "White Shirt",
+      "color": "White"
+    },
+    "bottom": {
+      "name": "White Shorts",
+      "color": "White"
+    },
+    "shoes": {
+      "name": "White Sneakers",
+      "color": "White"
+    },
+    "tags": ["casual", "minimal", "rainy"]
+  },
+  {
+    "top": {
+      "name": "Grey Hoodie",
+      "color": "Grey"
+    },
+    "bottom": {
+      "name": "Blue Jeans",
+      "color": "Blue"
+    },
+    "shoes": {
+      "name": "Blue Sandals",
+      "color": "Blue"
+    },
+    "tags": ["casual", "hot", "neutral"]
+  },
+  {
+    "top": {
+      "name": "Red Blouse",
+      "color": "Red"
+    },
+    "bottom": {
+      "name": "White Shorts",
+      "color": "White"
+    },
+    "shoes": {
+      "name": "Brown Loafers",
+      "color": "Brown"
+    },
+    "tags": ["casual", "minimal", "rainy"]
+  },
+  {
+    "top": {
+      "name": "Black T-Shirt",
+      "color": "Black"
+    },
+    "bottom": {
+      "name": "Grey Pants",
+      "color": "Grey"
+    },
+    "shoes": {
+      "name": "Blue Sandals",
+      "color": "Blue"
+    },
+    "tags": ["hot", "formal", "neutral"]
+  },
+  {
+    "top": {
+      "name": "Grey Hoodie",
+      "color": "Grey"
+    },
+    "bottom": {
+      "name": "Black Skirt",
+      "color": "Black"
+    },
+    "shoes": {
+      "name": "Red Heels",
+      "color": "Red"
+    },
+    "tags": ["casual", "hot", "neutral"]
+  },
+  {
+    "top": {
+      "name": "Black T-Shirt",
+      "color": "Black"
+    },
+    "bottom": {
+      "name": "Brown Trousers",
+      "color": "Brown"
+    },
+    "shoes": {
+      "name": "Black Boots",
+      "color": "Black"
+    },
+    "tags": ["casual", "cold", "bold"]
+  },
+  {
+    "top": {
+      "name": "Grey Hoodie",
+      "color": "Grey"
+    },
+    "bottom": {
+      "name": "Grey Pants",
+      "color": "Grey"
+    },
+    "shoes": {
+      "name": "White Sneakers",
+      "color": "White"
+    },
+    "tags": ["formal", "rainy", "neutral"]
+  },
+  {
+    "top": {
+      "name": "Grey Hoodie",
+      "color": "Grey"
+    },
+    "bottom": {
+      "name": "White Shorts",
+      "color": "White"
+    },
+    "shoes": {
+      "name": "Red Heels",
+      "color": "Red"
+    },
+    "tags": ["hot", "minimal", "party"]
+  },
+  {
+    "top": {
+      "name": "Grey Hoodie",
+      "color": "Grey"
+    },
+    "bottom": {
+      "name": "Grey Pants",
+      "color": "Grey"
+    },
+    "shoes": {
+      "name": "Black Boots",
+      "color": "Black"
+    },
+    "tags": ["casual", "cold", "neutral"]
+  },
+  {
+    "top": {
+      "name": "Grey Hoodie",
+      "color": "Grey"
+    },
+    "bottom": {
+      "name": "Blue Jeans",
+      "color": "Blue"
+    },
+    "shoes": {
+      "name": "Blue Sandals",
+      "color": "Blue"
+    },
+    "tags": ["hot", "minimal", "formal"]
+  },
+  {
+    "top": {
+      "name": "White Shirt",
+      "color": "White"
+    },
+    "bottom": {
+      "name": "White Shorts",
+      "color": "White"
+    },
+    "shoes": {
+      "name": "Red Heels",
+      "color": "Red"
+    },
+    "tags": ["hot", "minimal", "formal"]
+  },
+  {
+    "top": {
+      "name": "Red Blouse",
+      "color": "Red"
+    },
+    "bottom": {
+      "name": "Blue Jeans",
+      "color": "Blue"
+    },
+    "shoes": {
+      "name": "White Sneakers",
+      "color": "White"
+    },
+    "tags": ["casual", "hot", "bold"]
+  },
+  {
+    "top": {
+      "name": "Black T-Shirt",
+      "color": "Black"
+    },
+    "bottom": {
+      "name": "Black Skirt",
+      "color": "Black"
+    },
+    "shoes": {
+      "name": "Brown Loafers",
+      "color": "Brown"
+    },
+    "tags": ["bold", "party", "rainy"]
+  },
+  {
+    "top": {
+      "name": "White Shirt",
+      "color": "White"
+    },
+    "bottom": {
+      "name": "Black Skirt",
+      "color": "Black"
+    },
+    "shoes": {
+      "name": "Blue Sandals",
+      "color": "Blue"
+    },
+    "tags": ["formal", "rainy", "neutral"]
+  },
+  {
+    "top": {
+      "name": "White Shirt",
+      "color": "White"
+    },
+    "bottom": {
+      "name": "Black Skirt",
+      "color": "Black"
+    },
+    "shoes": {
+      "name": "Brown Loafers",
+      "color": "Brown"
+    },
+    "tags": ["formal", "bold", "rainy"]
+  },
+  {
+    "top": {
+      "name": "Black T-Shirt",
+      "color": "Black"
+    },
+    "bottom": {
+      "name": "Blue Jeans",
+      "color": "Blue"
+    },
+    "shoes": {
+      "name": "Brown Loafers",
+      "color": "Brown"
+    },
+    "tags": ["casual", "cold", "minimal"]
+  },
+  {
+    "top": {
+      "name": "Red Blouse",
+      "color": "Red"
+    },
+    "bottom": {
+      "name": "Black Skirt",
+      "color": "Black"
+    },
+    "shoes": {
+      "name": "Red Heels",
+      "color": "Red"
+    },
+    "tags": ["casual", "bold", "rainy"]
+  },
+  {
+    "top": {
+      "name": "Red Blouse",
+      "color": "Red"
+    },
+    "bottom": {
+      "name": "Grey Pants",
+      "color": "Grey"
+    },
+    "shoes": {
+      "name": "Red Heels",
+      "color": "Red"
+    },
+    "tags": ["cold", "bold", "formal"]
+  },
+  {
+    "top": {
+      "name": "Grey Hoodie",
+      "color": "Grey"
+    },
+    "bottom": {
+      "name": "Black Skirt",
+      "color": "Black"
+    },
+    "shoes": {
+      "name": "Black Boots",
+      "color": "Black"
+    },
+    "tags": ["hot", "party", "neutral"]
+  },
+  {
+    "top": {
+      "name": "Red Blouse",
+      "color": "Red"
+    },
+    "bottom": {
+      "name": "Brown Trousers",
+      "color": "Brown"
+    },
+    "shoes": {
+      "name": "Black Boots",
+      "color": "Black"
+    },
+    "tags": ["cold", "bold", "party"]
+  },
+  {
+    "top": {
+      "name": "Grey Hoodie",
+      "color": "Grey"
+    },
+    "bottom": {
+      "name": "White Shorts",
+      "color": "White"
+    },
+    "shoes": {
+      "name": "Blue Sandals",
+      "color": "Blue"
+    },
+    "tags": ["cold", "party", "neutral"]
+  },
+  {
+    "top": {
+      "name": "White Shirt",
+      "color": "White"
+    },
+    "bottom": {
+      "name": "Brown Trousers",
+      "color": "Brown"
+    },
+    "shoes": {
+      "name": "Red Heels",
+      "color": "Red"
+    },
+    "tags": ["formal", "rainy", "neutral"]
+  },
+  {
+    "top": {
+      "name": "Black T-Shirt",
+      "color": "Black"
+    },
+    "bottom": {
+      "name": "Grey Pants",
+      "color": "Grey"
+    },
+    "shoes": {
+      "name": "White Sneakers",
+      "color": "White"
+    },
+    "tags": ["formal", "bold", "rainy"]
+  },
+  {
+    "top": {
+      "name": "Black T-Shirt",
+      "color": "Black"
+    },
+    "bottom": {
+      "name": "Brown Trousers",
+      "color": "Brown"
+    },
+    "shoes": {
+      "name": "Brown Loafers",
+      "color": "Brown"
+    },
+    "tags": ["casual", "minimal", "rainy"]
+  },
+  {
+    "top": {
+      "name": "Black T-Shirt",
+      "color": "Black"
+    },
+    "bottom": {
+      "name": "Grey Pants",
+      "color": "Grey"
+    },
+    "shoes": {
+      "name": "Blue Sandals",
+      "color": "Blue"
+    },
+    "tags": ["formal", "bold", "rainy"]
+  },
+  {
+    "top": {
+      "name": "White Shirt",
+      "color": "White"
+    },
+    "bottom": {
+      "name": "Blue Jeans",
+      "color": "Blue"
+    },
+    "shoes": {
+      "name": "Brown Loafers",
+      "color": "Brown"
+    },
+    "tags": ["hot", "formal", "neutral"]
+  },
+  {
+    "top": {
+      "name": "Blue Sweater",
+      "color": "Blue"
+    },
+    "bottom": {
+      "name": "White Shorts",
+      "color": "White"
+    },
+    "shoes": {
+      "name": "Black Boots",
+      "color": "Black"
+    },
+    "tags": ["cold", "bold", "formal"]
+  },
+  {
+    "top": {
+      "name": "White Shirt",
+      "color": "White"
+    },
+    "bottom": {
+      "name": "Black Skirt",
+      "color": "Black"
+    },
+    "shoes": {
+      "name": "Blue Sandals",
+      "color": "Blue"
+    },
+    "tags": ["formal", "rainy", "neutral"]
+  }
+]
