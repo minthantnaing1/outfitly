@@ -5,6 +5,21 @@ export const dynamic = "force-dynamic";
 
 /* ----------------------------- small helpers ----------------------------- */
 
+function wantsMore(text = "") {
+  return /\b(more|another|next|again|others?)\b/i.test(text.trim());
+}
+
+// Walk back through the message history to find the last assistant context
+function getLastAssistantContext(messages = []) {
+  for (let i = messages.length - 1; i >= 0; i--) {
+    const m = messages[i];
+    if (m?.role === "assistant" && m?.context?.fashionQuery) {
+      return m.context; // { fashionQuery, page, city, mood, temp, bodyShape, weatherSummary }
+    }
+  }
+  return null;
+}
+
 function isJsonResponse(res) {
   const ct = res.headers.get("content-type") || "";
   return ct.includes("application/json");
@@ -223,6 +238,8 @@ function getThemeOutfitRecommendation(themes, weather = null) {
   }
   return null;
 }
+
+
 
 /* --------------------------- keyword + mood detect --------------------------- */
 
@@ -844,6 +861,7 @@ export async function POST(req) {
     replyParts.push({ type: "text", content: `🧠 I didn’t catch a specific theme, weather, or city. You can also upload an image!` });
   }
 
+  
   return new Response(
     JSON.stringify({ id: Date.now().toString(), role: "assistant", content: replyParts }),
     { status: 200, headers: { "Content-Type": "application/json" } }
