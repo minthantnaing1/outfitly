@@ -17,6 +17,12 @@ export default function HomePage() {
           <Link href="/chat" className="hover:text-pink-300">
             Chatbot
           </Link>
+          <Link href="/wardrobe" className="hover:text-pink-300">
+            Wardrobe
+          </Link>
+          <Link href="/shop" className="hover:text-pink-300">
+            Shop
+          </Link>
           <Link href="#about" className="hover:text-pink-300">
             About
           </Link>
