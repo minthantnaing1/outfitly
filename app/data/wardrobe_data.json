@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.pinimg.com/1200x/05/78/14/0578148b0f670df28db7344eca17c26a.jpg",
+    "type": "Top",
+    "color": "Pink",
+    "tags": ["Casual", "Summer", "Happy"]
+  },
+  {
+    "id": 2,
+    "image": "https://i.pinimg.com/736x/b8/e3/50/b8e350b9e1c055e3fe944f632021e1fa.jpg",
+    "type": "Bottom",
+    "color": "Blue",
+    "tags": ["Denim", "Winter", "Party"]
+  },
+  {
+    "id": 3,
+    "image": "https://i.pinimg.com/736x/fe/ee/e1/feeee149e044a85926f1c3df8b32b3c0.jpg",
+    "type": "Shoes",
+    "color": "Black",
+    "tags": ["Sporty", "Cold", "Active"]
+  },
+  {
+    "id": 4,
+    "image": "https://i.pinimg.com/1200x/0b/6c/3d/0b6c3d4d86faf2b0b3a4da3025c2aaa6.jpg",
+    "type": "Top",
+    "color": "Red",
+    "tags": ["Formal", "Date", "Warm"]
+  },
+  {
+    "id": 5,
+    "image": "https://i.pinimg.com/1200x/42/59/6d/42596d4d091a3f95e967525085caa6cb.jpg",
+    "type": "Shoes",
+    "color": "White",
+    "tags": ["Formal", "Summer", "Happy"]
+  },
+  {
+    "id": 6,
+    "image": "https://i.pinimg.com/1200x/d4/8f/22/d48f229d4bc780a746ab31cb886a4451.jpg",
+    "type": "Bottom",
+    "color": "Black",
+    "tags": ["Formal", "Cool", "Rainy"]
+  }
+]
