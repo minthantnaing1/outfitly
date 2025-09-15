@@ -24,7 +24,7 @@ export default function Closet() {
         {images.map((img) => (
           <div key={img.id}>
             <img
-              src={img.url}
+              src={img.url || "/placeholder.svg"}
               alt={img.name}
               className="w-full h-auto rounded"
             />
