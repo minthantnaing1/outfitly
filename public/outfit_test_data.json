@@ -1,502 +1,301 @@
 [
   {
     "top": {
-      "name": "Grey Hoodie",
-      "color": "Grey"
+      "name": "Pink Top",
+      "color": "Pink"
     },
     "bottom": {
-      "name": "Brown Trousers",
-      "color": "Brown"
-    },
-    "shoes": {
-      "name": "Brown Loafers",
-      "color": "Brown"
-    },
-    "tags": ["hot", "bold", "formal"]
-  },
-  {
-    "top": {
-      "name": "Red Blouse",
-      "color": "Red"
-    },
-    "bottom": {
-      "name": "Brown Trousers",
-      "color": "Brown"
-    },
-    "shoes": {
-      "name": "Red Heels",
-      "color": "Red"
-    },
-    "tags": ["casual", "cold", "neutral"]
-  },
-  {
-    "top": {
-      "name": "Red Blouse",
-      "color": "Red"
-    },
-    "bottom": {
-      "name": "Grey Pants",
-      "color": "Grey"
-    },
-    "shoes": {
-      "name": "Red Heels",
-      "color": "Red"
-    },
-    "tags": ["formal", "minimal", "rainy"]
-  },
-  {
-    "top": {
-      "name": "Red Blouse",
-      "color": "Red"
-    },
-    "bottom": {
-      "name": "Brown Trousers",
-      "color": "Brown"
-    },
-    "shoes": {
-      "name": "Red Heels",
-      "color": "Red"
-    },
-    "tags": ["formal", "bold", "rainy"]
-  },
-  {
-    "top": {
-      "name": "Blue Sweater",
+      "name": "Blue Denim Jeans",
       "color": "Blue"
+    },
+    "shoes": {
+      "name": "Black Sneakers",
+      "color": "Black"
+    },
+    "tags": ["hot", "casual", "bold", "neutral"],
+    "images": {
+      "top": "https://i.pinimg.com/1200x/05/78/14/0578148b0f670df28db7344eca17c26a.jpg",
+      "bottom": "https://i.pinimg.com/736x/b8/e3/50/b8e350b9e1c055e3fe944f632021e1fa.jpg",
+      "shoes": "https://i.pinimg.com/736x/fe/ee/e1/feeee149e044a85926f1c3df8b32b3c0.jpg",
+      "outfit": null
+    }
+  },
+  {
+    "top": {
+      "name": "Pink Top",
+      "color": "Pink"
+    },
+    "bottom": {
+      "name": "Blue Denim Jeans",
+      "color": "Blue"
+    },
+    "shoes": {
+      "name": "White Formal Shoes",
+      "color": "White"
+    },
+    "tags": ["hot", "casual", "formal", "bold"],
+    "images": {
+      "top": "https://i.pinimg.com/1200x/05/78/14/0578148b0f670df28db7344eca17c26a.jpg",
+      "bottom": "https://i.pinimg.com/736x/b8/e3/50/b8e350b9e1c055e3fe944f632021e1fa.jpg",
+      "shoes": "https://i.pinimg.com/1200x/42/59/6d/42596d4d091a3f95e967525085caa6cb.jpg",
+      "outfit": null
+    }
+  },
+  {
+    "top": {
+      "name": "Pink Top",
+      "color": "Pink"
+    },
+    "bottom": {
+      "name": "Black Trousers",
+      "color": "Black"
+    },
+    "shoes": {
+      "name": "Black Sneakers",
+      "color": "Black"
+    },
+    "tags": ["cold", "rainy", "casual", "formal"],
+    "images": {
+      "top": "https://i.pinimg.com/1200x/05/78/14/0578148b0f670df28db7344eca17c26a.jpg",
+      "bottom": "https://i.pinimg.com/1200x/d4/8f/22/d48f229d4bc780a746ab31cb886a4451.jpg",
+      "shoes": "https://i.pinimg.com/736x/fe/ee/e1/feeee149e044a85926f1c3df8b32b3c0.jpg",
+      "outfit": null
+    }
+  },
+  {
+    "top": {
+      "name": "Pink Top",
+      "color": "Pink"
+    },
+    "bottom": {
+      "name": "Black Trousers",
+      "color": "Black"
+    },
+    "shoes": {
+      "name": "White Formal Shoes",
+      "color": "White"
+    },
+    "tags": ["hot", "cold", "rainy", "formal"],
+    "images": {
+      "top": "https://i.pinimg.com/1200x/05/78/14/0578148b0f670df28db7344eca17c26a.jpg",
+      "bottom": "https://i.pinimg.com/1200x/d4/8f/22/d48f229d4bc780a746ab31cb886a4451.jpg",
+      "shoes": "https://i.pinimg.com/1200x/42/59/6d/42596d4d091a3f95e967525085caa6cb.jpg",
+      "outfit": null
+    }
+  },
+  {
+    "top": {
+      "name": "Red Top",
+      "color": "Red"
+    },
+    "bottom": {
+      "name": "Blue Denim Jeans",
+      "color": "Blue"
+    },
+    "shoes": {
+      "name": "Black Sneakers",
+      "color": "Black"
+    },
+    "tags": ["hot", "casual", "formal", "bold"],
+    "images": {
+      "top": "https://i.pinimg.com/1200x/0b/6c/3d/0b6c3d4d86faf2b0b3a4da3025c2aaa6.jpg",
+      "bottom": "https://i.pinimg.com/736x/b8/e3/50/b8e350b9e1c055e3fe944f632021e1fa.jpg",
+      "shoes": "https://i.pinimg.com/736x/fe/ee/e1/feeee149e044a85926f1c3df8b32b3c0.jpg",
+      "outfit": null
+    }
+  },
+  {
+    "top": {
+      "name": "Red Top",
+      "color": "Red"
+    },
+    "bottom": {
+      "name": "Blue Denim Jeans",
+      "color": "Blue"
+    },
+    "shoes": {
+      "name": "White Formal Shoes",
+      "color": "White"
+    },
+    "tags": ["hot", "casual", "formal", "bold"],
+    "images": {
+      "top": "https://i.pinimg.com/1200x/0b/6c/3d/0b6c3d4d86faf2b0b3a4da3025c2aaa6.jpg",
+      "bottom": "https://i.pinimg.com/736x/b8/e3/50/b8e350b9e1c055e3fe944f632021e1fa.jpg",
+      "shoes": "https://i.pinimg.com/1200x/42/59/6d/42596d4d091a3f95e967525085caa6cb.jpg",
+      "outfit": null
+    }
+  },
+  {
+    "top": {
+      "name": "Red Top",
+      "color": "Red"
+    },
+    "bottom": {
+      "name": "Black Trousers",
+      "color": "Black"
+    },
+    "shoes": {
+      "name": "Black Sneakers",
+      "color": "Black"
+    },
+    "tags": ["hot", "cold", "casual", "formal"],
+    "images": {
+      "top": "https://i.pinimg.com/1200x/0b/6c/3d/0b6c3d4d86faf2b0b3a4da3025c2aaa6.jpg",
+      "bottom": "https://i.pinimg.com/1200x/d4/8f/22/d48f229d4bc780a746ab31cb886a4451.jpg",
+      "shoes": "https://i.pinimg.com/736x/fe/ee/e1/feeee149e044a85926f1c3df8b32b3c0.jpg",
+      "outfit": null
+    }
+  },
+  {
+    "top": {
+      "name": "Red Top",
+      "color": "Red"
+    },
+    "bottom": {
+      "name": "Black Trousers",
+      "color": "Black"
+    },
+    "shoes": {
+      "name": "White Formal Shoes",
+      "color": "White"
+    },
+    "tags": ["hot", "cold", "rainy", "formal"],
+    "images": {
+      "top": "https://i.pinimg.com/1200x/0b/6c/3d/0b6c3d4d86faf2b0b3a4da3025c2aaa6.jpg",
+      "bottom": "https://i.pinimg.com/1200x/d4/8f/22/d48f229d4bc780a746ab31cb886a4451.jpg",
+      "shoes": "https://i.pinimg.com/1200x/42/59/6d/42596d4d091a3f95e967525085caa6cb.jpg",
+      "outfit": null
+    }
+  },
+  {
+    "top": {
+      "name": "Pink Top",
+      "color": "Pink"
     },
     "bottom": {
       "name": "Blue Jeans",
       "color": "Blue"
     },
     "shoes": {
-      "name": "Blue Sandals",
-      "color": "Blue"
-    },
-    "tags": ["casual", "cold", "bold"]
-  },
-  {
-    "top": {
-      "name": "White Shirt",
-      "color": "White"
-    },
-    "bottom": {
-      "name": "Grey Pants",
-      "color": "Grey"
-    },
-    "shoes": {
       "name": "White Sneakers",
       "color": "White"
     },
-    "tags": ["casual", "minimal", "rainy"]
+    "tags": ["hot", "casual", "minimal", "bold"],
+    "images": {
+      "top": "https://i.pinimg.com/1200x/05/78/14/0578148b0f670df28db7344eca17c26a.jpg",
+      "bottom": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Jeans.jpg",
+      "shoes": "https://upload.wikimedia.org/wikipedia/commons/1/17/White_sneakers.jpg",
+      "outfit": null
+    }
   },
   {
     "top": {
-      "name": "Black T-Shirt",
-      "color": "Black"
-    },
-    "bottom": {
-      "name": "Brown Trousers",
-      "color": "Brown"
-    },
-    "shoes": {
-      "name": "Brown Loafers",
-      "color": "Brown"
-    },
-    "tags": ["casual", "hot", "bold"]
-  },
-  {
-    "top": {
-      "name": "Blue Sweater",
-      "color": "Blue"
-    },
-    "bottom": {
-      "name": "Brown Trousers",
-      "color": "Brown"
-    },
-    "shoes": {
-      "name": "Blue Sandals",
-      "color": "Blue"
-    },
-    "tags": ["cold", "party", "neutral"]
-  },
-  {
-    "top": {
-      "name": "White Shirt",
-      "color": "White"
-    },
-    "bottom": {
-      "name": "Brown Trousers",
-      "color": "Brown"
-    },
-    "shoes": {
-      "name": "Brown Loafers",
-      "color": "Brown"
-    },
-    "tags": ["cold", "bold", "party"]
-  },
-  {
-    "top": {
-      "name": "Black T-Shirt",
-      "color": "Black"
-    },
-    "bottom": {
-      "name": "Grey Pants",
-      "color": "Grey"
-    },
-    "shoes": {
-      "name": "White Sneakers",
-      "color": "White"
-    },
-    "tags": ["casual", "cold", "neutral"]
-  },
-  {
-    "top": {
-      "name": "Blue Sweater",
-      "color": "Blue"
-    },
-    "bottom": {
-      "name": "Brown Trousers",
-      "color": "Brown"
-    },
-    "shoes": {
-      "name": "Red Heels",
-      "color": "Red"
-    },
-    "tags": ["hot", "bold", "formal"]
-  },
-  {
-    "top": {
-      "name": "Blue Sweater",
-      "color": "Blue"
+      "name": "Pink Top",
+      "color": "Pink"
     },
     "bottom": {
       "name": "Blue Jeans",
       "color": "Blue"
     },
     "shoes": {
-      "name": "White Sneakers",
-      "color": "White"
+      "name": "Black Converse Sneakers",
+      "color": "Black"
     },
-    "tags": ["formal", "minimal", "rainy"]
+    "tags": ["casual", "bold"],
+    "images": {
+      "top": "https://i.pinimg.com/1200x/05/78/14/0578148b0f670df28db7344eca17c26a.jpg",
+      "bottom": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Jeans.jpg",
+      "shoes": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Black_Converse_sneakers.JPG",
+      "outfit": null
+    }
   },
   {
     "top": {
-      "name": "Black T-Shirt",
-      "color": "Black"
+      "name": "Pink Top",
+      "color": "Pink"
     },
     "bottom": {
-      "name": "Blue Jeans",
-      "color": "Blue"
+      "name": "Khaki Chinos",
+      "color": "Khaki"
     },
     "shoes": {
       "name": "Brown Loafers",
       "color": "Brown"
     },
-    "tags": ["cold", "bold", "formal"]
+    "tags": ["hot", "formal", "minimal", "bold"],
+    "images": {
+      "top": "https://i.pinimg.com/1200x/05/78/14/0578148b0f670df28db7344eca17c26a.jpg",
+      "bottom": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Chino_pants.jpg",
+      "shoes": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Loafer_shoes_for_men.jpg",
+      "outfit": null
+    }
   },
   {
     "top": {
-      "name": "Grey Hoodie",
-      "color": "Grey"
+      "name": "Pink Top",
+      "color": "Pink"
     },
     "bottom": {
-      "name": "Grey Pants",
-      "color": "Grey"
-    },
-    "shoes": {
-      "name": "Brown Loafers",
-      "color": "Brown"
-    },
-    "tags": ["formal", "minimal", "rainy"]
-  },
-  {
-    "top": {
-      "name": "White Shirt",
-      "color": "White"
-    },
-    "bottom": {
-      "name": "Black Skirt",
-      "color": "Black"
-    },
-    "shoes": {
-      "name": "Black Boots",
-      "color": "Black"
-    },
-    "tags": ["cold", "bold", "formal"]
-  },
-  {
-    "top": {
-      "name": "Blue Sweater",
-      "color": "Blue"
-    },
-    "bottom": {
-      "name": "Black Skirt",
-      "color": "Black"
-    },
-    "shoes": {
-      "name": "Brown Loafers",
-      "color": "Brown"
-    },
-    "tags": ["cold", "minimal", "party"]
-  },
-  {
-    "top": {
-      "name": "White Shirt",
-      "color": "White"
-    },
-    "bottom": {
-      "name": "Brown Trousers",
-      "color": "Brown"
-    },
-    "shoes": {
-      "name": "Blue Sandals",
-      "color": "Blue"
-    },
-    "tags": ["hot", "minimal", "formal"]
-  },
-  {
-    "top": {
-      "name": "Blue Sweater",
-      "color": "Blue"
-    },
-    "bottom": {
-      "name": "Black Skirt",
-      "color": "Black"
-    },
-    "shoes": {
-      "name": "Black Boots",
-      "color": "Black"
-    },
-    "tags": ["casual", "rainy", "neutral"]
-  },
-  {
-    "top": {
-      "name": "Grey Hoodie",
-      "color": "Grey"
-    },
-    "bottom": {
-      "name": "Brown Trousers",
-      "color": "Brown"
-    },
-    "shoes": {
-      "name": "Red Heels",
-      "color": "Red"
-    },
-    "tags": ["formal", "rainy", "neutral"]
-  },
-  {
-    "top": {
-      "name": "Red Blouse",
-      "color": "Red"
-    },
-    "bottom": {
-      "name": "White Shorts",
-      "color": "White"
+      "name": "Khaki Cargo Pants",
+      "color": "Khaki"
     },
     "shoes": {
       "name": "White Sneakers",
       "color": "White"
     },
-    "tags": ["formal", "minimal", "rainy"]
+    "tags": ["hot", "casual", "bold"],
+    "images": {
+      "top": "https://i.pinimg.com/1200x/05/78/14/0578148b0f670df28db7344eca17c26a.jpg",
+      "bottom": "https://upload.wikimedia.org/wikipedia/commons/4/43/Khaki_Cargo_Pants_Back.jpg",
+      "shoes": "https://upload.wikimedia.org/wikipedia/commons/1/17/White_sneakers.jpg",
+      "outfit": null
+    }
   },
   {
     "top": {
-      "name": "White Shirt",
-      "color": "White"
+      "name": "Pink Top",
+      "color": "Pink"
     },
     "bottom": {
-      "name": "Grey Pants",
-      "color": "Grey"
-    },
-    "shoes": {
-      "name": "Red Heels",
-      "color": "Red"
-    },
-    "tags": ["casual", "bold", "rainy"]
-  },
-  {
-    "top": {
-      "name": "Black T-Shirt",
-      "color": "Black"
-    },
-    "bottom": {
-      "name": "Blue Jeans",
-      "color": "Blue"
-    },
-    "shoes": {
-      "name": "Blue Sandals",
-      "color": "Blue"
-    },
-    "tags": ["cold", "party", "neutral"]
-  },
-  {
-    "top": {
-      "name": "White Shirt",
-      "color": "White"
-    },
-    "bottom": {
-      "name": "White Shorts",
-      "color": "White"
-    },
-    "shoes": {
-      "name": "White Sneakers",
-      "color": "White"
-    },
-    "tags": ["casual", "minimal", "rainy"]
-  },
-  {
-    "top": {
-      "name": "Grey Hoodie",
-      "color": "Grey"
-    },
-    "bottom": {
-      "name": "Blue Jeans",
-      "color": "Blue"
-    },
-    "shoes": {
-      "name": "Blue Sandals",
-      "color": "Blue"
-    },
-    "tags": ["casual", "hot", "neutral"]
-  },
-  {
-    "top": {
-      "name": "Red Blouse",
-      "color": "Red"
-    },
-    "bottom": {
-      "name": "White Shorts",
-      "color": "White"
-    },
-    "shoes": {
-      "name": "Brown Loafers",
-      "color": "Brown"
-    },
-    "tags": ["casual", "minimal", "rainy"]
-  },
-  {
-    "top": {
-      "name": "Black T-Shirt",
-      "color": "Black"
-    },
-    "bottom": {
-      "name": "Grey Pants",
-      "color": "Grey"
-    },
-    "shoes": {
-      "name": "Blue Sandals",
-      "color": "Blue"
-    },
-    "tags": ["hot", "formal", "neutral"]
-  },
-  {
-    "top": {
-      "name": "Grey Hoodie",
-      "color": "Grey"
-    },
-    "bottom": {
-      "name": "Black Skirt",
+      "name": "Black Trousers",
       "color": "Black"
     },
     "shoes": {
-      "name": "Red Heels",
-      "color": "Red"
+      "name": "White Formal Shoes",
+      "color": "White"
     },
-    "tags": ["casual", "hot", "neutral"]
+    "tags": ["hot", "formal", "bold"],
+    "images": {
+      "top": "https://i.pinimg.com/1200x/05/78/14/0578148b0f670df28db7344eca17c26a.jpg",
+      "bottom": "https://i.pinimg.com/1200x/d4/8f/22/d48f229d4bc780a746ab31cb886a4451.jpg",
+      "shoes": "https://i.pinimg.com/1200x/42/59/6d/42596d4d091a3f95e967525085caa6cb.jpg",
+      "outfit": null
+    }
   },
   {
     "top": {
-      "name": "Black T-Shirt",
+      "name": "Pink Top",
+      "color": "Pink"
+    },
+    "bottom": {
+      "name": "Black Trousers",
       "color": "Black"
     },
-    "bottom": {
-      "name": "Brown Trousers",
-      "color": "Brown"
-    },
     "shoes": {
-      "name": "Black Boots",
+      "name": "Black Converse Sneakers",
       "color": "Black"
     },
-    "tags": ["casual", "cold", "bold"]
+    "tags": ["cold", "rainy", "casual", "formal"],
+    "images": {
+      "top": "https://i.pinimg.com/1200x/05/78/14/0578148b0f670df28db7344eca17c26a.jpg",
+      "bottom": "https://i.pinimg.com/1200x/d4/8f/22/d48f229d4bc780a746ab31cb886a4451.jpg",
+      "shoes": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Black_Converse_sneakers.JPG",
+      "outfit": null
+    }
   },
   {
     "top": {
-      "name": "Grey Hoodie",
-      "color": "Grey"
-    },
-    "bottom": {
-      "name": "Grey Pants",
-      "color": "Grey"
-    },
-    "shoes": {
-      "name": "White Sneakers",
-      "color": "White"
-    },
-    "tags": ["formal", "rainy", "neutral"]
-  },
-  {
-    "top": {
-      "name": "Grey Hoodie",
-      "color": "Grey"
-    },
-    "bottom": {
-      "name": "White Shorts",
-      "color": "White"
-    },
-    "shoes": {
-      "name": "Red Heels",
-      "color": "Red"
-    },
-    "tags": ["hot", "minimal", "party"]
-  },
-  {
-    "top": {
-      "name": "Grey Hoodie",
-      "color": "Grey"
-    },
-    "bottom": {
-      "name": "Grey Pants",
-      "color": "Grey"
-    },
-    "shoes": {
-      "name": "Black Boots",
-      "color": "Black"
-    },
-    "tags": ["casual", "cold", "neutral"]
-  },
-  {
-    "top": {
-      "name": "Grey Hoodie",
-      "color": "Grey"
-    },
-    "bottom": {
-      "name": "Blue Jeans",
-      "color": "Blue"
-    },
-    "shoes": {
-      "name": "Blue Sandals",
-      "color": "Blue"
-    },
-    "tags": ["hot", "minimal", "formal"]
-  },
-  {
-    "top": {
-      "name": "White Shirt",
-      "color": "White"
-    },
-    "bottom": {
-      "name": "White Shorts",
-      "color": "White"
-    },
-    "shoes": {
-      "name": "Red Heels",
-      "color": "Red"
-    },
-    "tags": ["hot", "minimal", "formal"]
-  },
-  {
-    "top": {
-      "name": "Red Blouse",
+      "name": "Red Top",
       "color": "Red"
     },
     "bottom": {
@@ -507,206 +306,395 @@
       "name": "White Sneakers",
       "color": "White"
     },
-    "tags": ["casual", "hot", "bold"]
+    "tags": ["hot", "casual", "formal", "bold"],
+    "images": {
+      "top": "https://i.pinimg.com/1200x/0b/6c/3d/0b6c3d4d86faf2b0b3a4da3025c2aaa6.jpg",
+      "bottom": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Jeans.jpg",
+      "shoes": "https://upload.wikimedia.org/wikipedia/commons/1/17/White_sneakers.jpg",
+      "outfit": null
+    }
   },
   {
     "top": {
-      "name": "Black T-Shirt",
-      "color": "Black"
-    },
-    "bottom": {
-      "name": "Black Skirt",
-      "color": "Black"
-    },
-    "shoes": {
-      "name": "Brown Loafers",
-      "color": "Brown"
-    },
-    "tags": ["bold", "party", "rainy"]
-  },
-  {
-    "top": {
-      "name": "White Shirt",
-      "color": "White"
-    },
-    "bottom": {
-      "name": "Black Skirt",
-      "color": "Black"
-    },
-    "shoes": {
-      "name": "Blue Sandals",
-      "color": "Blue"
-    },
-    "tags": ["formal", "rainy", "neutral"]
-  },
-  {
-    "top": {
-      "name": "White Shirt",
-      "color": "White"
-    },
-    "bottom": {
-      "name": "Black Skirt",
-      "color": "Black"
-    },
-    "shoes": {
-      "name": "Brown Loafers",
-      "color": "Brown"
-    },
-    "tags": ["formal", "bold", "rainy"]
-  },
-  {
-    "top": {
-      "name": "Black T-Shirt",
-      "color": "Black"
+      "name": "Red Top",
+      "color": "Red"
     },
     "bottom": {
       "name": "Blue Jeans",
       "color": "Blue"
     },
     "shoes": {
+      "name": "Black Converse Sneakers",
+      "color": "Black"
+    },
+    "tags": ["casual", "formal", "bold"],
+    "images": {
+      "top": "https://i.pinimg.com/1200x/0b/6c/3d/0b6c3d4d86faf2b0b3a4da3025c2aaa6.jpg",
+      "bottom": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Jeans.jpg",
+      "shoes": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Black_Converse_sneakers.JPG",
+      "outfit": null
+    }
+  },
+  {
+    "top": {
+      "name": "Red Top",
+      "color": "Red"
+    },
+    "bottom": {
+      "name": "Khaki Chinos",
+      "color": "Khaki"
+    },
+    "shoes": {
       "name": "Brown Loafers",
       "color": "Brown"
     },
-    "tags": ["casual", "cold", "minimal"]
+    "tags": ["hot", "formal", "bold", "neutral"],
+    "images": {
+      "top": "https://i.pinimg.com/1200x/0b/6c/3d/0b6c3d4d86faf2b0b3a4da3025c2aaa6.jpg",
+      "bottom": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Chino_pants.jpg",
+      "shoes": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Loafer_shoes_for_men.jpg",
+      "outfit": null
+    }
   },
   {
     "top": {
-      "name": "Red Blouse",
+      "name": "Red Top",
       "color": "Red"
     },
     "bottom": {
-      "name": "Black Skirt",
-      "color": "Black"
-    },
-    "shoes": {
-      "name": "Red Heels",
-      "color": "Red"
-    },
-    "tags": ["casual", "bold", "rainy"]
-  },
-  {
-    "top": {
-      "name": "Red Blouse",
-      "color": "Red"
-    },
-    "bottom": {
-      "name": "Grey Pants",
-      "color": "Grey"
-    },
-    "shoes": {
-      "name": "Red Heels",
-      "color": "Red"
-    },
-    "tags": ["cold", "bold", "formal"]
-  },
-  {
-    "top": {
-      "name": "Grey Hoodie",
-      "color": "Grey"
-    },
-    "bottom": {
-      "name": "Black Skirt",
-      "color": "Black"
-    },
-    "shoes": {
-      "name": "Black Boots",
-      "color": "Black"
-    },
-    "tags": ["hot", "party", "neutral"]
-  },
-  {
-    "top": {
-      "name": "Red Blouse",
-      "color": "Red"
-    },
-    "bottom": {
-      "name": "Brown Trousers",
-      "color": "Brown"
-    },
-    "shoes": {
-      "name": "Black Boots",
-      "color": "Black"
-    },
-    "tags": ["cold", "bold", "party"]
-  },
-  {
-    "top": {
-      "name": "Grey Hoodie",
-      "color": "Grey"
-    },
-    "bottom": {
-      "name": "White Shorts",
-      "color": "White"
-    },
-    "shoes": {
-      "name": "Blue Sandals",
-      "color": "Blue"
-    },
-    "tags": ["cold", "party", "neutral"]
-  },
-  {
-    "top": {
-      "name": "White Shirt",
-      "color": "White"
-    },
-    "bottom": {
-      "name": "Brown Trousers",
-      "color": "Brown"
-    },
-    "shoes": {
-      "name": "Red Heels",
-      "color": "Red"
-    },
-    "tags": ["formal", "rainy", "neutral"]
-  },
-  {
-    "top": {
-      "name": "Black T-Shirt",
-      "color": "Black"
-    },
-    "bottom": {
-      "name": "Grey Pants",
-      "color": "Grey"
+      "name": "Khaki Cargo Pants",
+      "color": "Khaki"
     },
     "shoes": {
       "name": "White Sneakers",
       "color": "White"
     },
-    "tags": ["formal", "bold", "rainy"]
+    "tags": ["hot", "casual", "bold"],
+    "images": {
+      "top": "https://i.pinimg.com/1200x/0b/6c/3d/0b6c3d4d86faf2b0b3a4da3025c2aaa6.jpg",
+      "bottom": "https://upload.wikimedia.org/wikipedia/commons/4/43/Khaki_Cargo_Pants_Back.jpg",
+      "shoes": "https://upload.wikimedia.org/wikipedia/commons/1/17/White_sneakers.jpg",
+      "outfit": null
+    }
   },
   {
     "top": {
-      "name": "Black T-Shirt",
-      "color": "Black"
+      "name": "White Tee",
+      "color": "White"
     },
     "bottom": {
-      "name": "Brown Trousers",
-      "color": "Brown"
+      "name": "Blue Jeans",
+      "color": "Blue"
+    },
+    "shoes": {
+      "name": "White Sneakers",
+      "color": "White"
+    },
+    "tags": ["hot", "casual", "minimal"],
+    "images": {
+      "top": "https://upload.wikimedia.org/wikipedia/commons/0/0a/White_tee.jpg",
+      "bottom": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Jeans.jpg",
+      "shoes": "https://upload.wikimedia.org/wikipedia/commons/1/17/White_sneakers.jpg",
+      "outfit": null
+    }
+  },
+  {
+    "top": {
+      "name": "White Tee",
+      "color": "White"
+    },
+    "bottom": {
+      "name": "Blue Jeans",
+      "color": "Blue"
+    },
+    "shoes": {
+      "name": "Black Converse Sneakers",
+      "color": "Black"
+    },
+    "tags": ["hot", "casual", "minimal"],
+    "images": {
+      "top": "https://upload.wikimedia.org/wikipedia/commons/0/0a/White_tee.jpg",
+      "bottom": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Jeans.jpg",
+      "shoes": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Black_Converse_sneakers.JPG",
+      "outfit": null
+    }
+  },
+  {
+    "top": {
+      "name": "White Tee",
+      "color": "White"
+    },
+    "bottom": {
+      "name": "Khaki Chinos",
+      "color": "Khaki"
     },
     "shoes": {
       "name": "Brown Loafers",
       "color": "Brown"
     },
-    "tags": ["casual", "minimal", "rainy"]
+    "tags": ["hot", "casual", "formal", "minimal"],
+    "images": {
+      "top": "https://upload.wikimedia.org/wikipedia/commons/0/0a/White_tee.jpg",
+      "bottom": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Chino_pants.jpg",
+      "shoes": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Loafer_shoes_for_men.jpg",
+      "outfit": null
+    }
   },
   {
     "top": {
-      "name": "Black T-Shirt",
-      "color": "Black"
+      "name": "White Tee",
+      "color": "White"
     },
     "bottom": {
-      "name": "Grey Pants",
-      "color": "Grey"
+      "name": "Khaki Cargo Pants",
+      "color": "Khaki"
     },
     "shoes": {
-      "name": "Blue Sandals",
-      "color": "Blue"
+      "name": "White Sneakers",
+      "color": "White"
     },
-    "tags": ["formal", "bold", "rainy"]
+    "tags": ["hot", "casual", "minimal"],
+    "images": {
+      "top": "https://upload.wikimedia.org/wikipedia/commons/0/0a/White_tee.jpg",
+      "bottom": "https://upload.wikimedia.org/wikipedia/commons/4/43/Khaki_Cargo_Pants_Back.jpg",
+      "shoes": "https://upload.wikimedia.org/wikipedia/commons/1/17/White_sneakers.jpg",
+      "outfit": null
+    }
   },
   {
     "top": {
-      "name": "White Shirt",
+      "name": "White Tee",
+      "color": "White"
+    },
+    "bottom": {
+      "name": "Black Trousers",
+      "color": "Black"
+    },
+    "shoes": {
+      "name": "White Formal Shoes",
+      "color": "White"
+    },
+    "tags": ["hot", "casual", "formal", "minimal"],
+    "images": {
+      "top": "https://upload.wikimedia.org/wikipedia/commons/0/0a/White_tee.jpg",
+      "bottom": "https://i.pinimg.com/1200x/d4/8f/22/d48f229d4bc780a746ab31cb886a4451.jpg",
+      "shoes": "https://i.pinimg.com/1200x/42/59/6d/42596d4d091a3f95e967525085caa6cb.jpg",
+      "outfit": null
+    }
+  },
+  {
+    "top": {
+      "name": "Grey Hoodie",
+      "color": "Grey"
+    },
+    "bottom": {
+      "name": "Blue Jeans",
+      "color": "Blue"
+    },
+    "shoes": {
+      "name": "White Sneakers",
+      "color": "White"
+    },
+    "tags": ["cold", "casual"],
+    "images": {
+      "top": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Blonde_girl_wearing_a_grey_hoodie_in_front_of_the_sea_%2852773562842%29.jpg",
+      "bottom": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Jeans.jpg",
+      "shoes": "https://upload.wikimedia.org/wikipedia/commons/1/17/White_sneakers.jpg",
+      "outfit": null
+    }
+  },
+  {
+    "top": {
+      "name": "Grey Hoodie",
+      "color": "Grey"
+    },
+    "bottom": {
+      "name": "Blue Jeans",
+      "color": "Blue"
+    },
+    "shoes": {
+      "name": "Black Converse Sneakers",
+      "color": "Black"
+    },
+    "tags": ["cold", "casual"],
+    "images": {
+      "top": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Blonde_girl_wearing_a_grey_hoodie_in_front_of_the_sea_%2852773562842%29.jpg",
+      "bottom": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Jeans.jpg",
+      "shoes": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Black_Converse_sneakers.JPG",
+      "outfit": null
+    }
+  },
+  {
+    "top": {
+      "name": "Grey Hoodie",
+      "color": "Grey"
+    },
+    "bottom": {
+      "name": "Khaki Chinos",
+      "color": "Khaki"
+    },
+    "shoes": {
+      "name": "Brown Loafers",
+      "color": "Brown"
+    },
+    "tags": ["cold", "casual", "formal", "neutral"],
+    "images": {
+      "top": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Blonde_girl_wearing_a_grey_hoodie_in_front_of_the_sea_%2852773562842%29.jpg",
+      "bottom": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Chino_pants.jpg",
+      "shoes": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Loafer_shoes_for_men.jpg",
+      "outfit": null
+    }
+  },
+  {
+    "top": {
+      "name": "Grey Hoodie",
+      "color": "Grey"
+    },
+    "bottom": {
+      "name": "Khaki Cargo Pants",
+      "color": "Khaki"
+    },
+    "shoes": {
+      "name": "White Sneakers",
+      "color": "White"
+    },
+    "tags": ["cold", "casual"],
+    "images": {
+      "top": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Blonde_girl_wearing_a_grey_hoodie_in_front_of_the_sea_%2852773562842%29.jpg",
+      "bottom": "https://upload.wikimedia.org/wikipedia/commons/4/43/Khaki_Cargo_Pants_Back.jpg",
+      "shoes": "https://upload.wikimedia.org/wikipedia/commons/1/17/White_sneakers.jpg",
+      "outfit": null
+    }
+  },
+  {
+    "top": {
+      "name": "Pink Top",
+      "color": "Pink"
+    },
+    "bottom": {
+      "name": "Khaki Chinos",
+      "color": "Khaki"
+    },
+    "shoes": {
+      "name": "White Formal Shoes",
+      "color": "White"
+    },
+    "tags": ["hot", "formal", "bold", "neutral"],
+    "images": {
+      "top": "https://i.pinimg.com/1200x/05/78/14/0578148b0f670df28db7344eca17c26a.jpg",
+      "bottom": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Chino_pants.jpg",
+      "shoes": "https://i.pinimg.com/1200x/42/59/6d/42596d4d091a3f95e967525085caa6cb.jpg",
+      "outfit": null
+    }
+  },
+  {
+    "top": {
+      "name": "Red Top",
+      "color": "Red"
+    },
+    "bottom": {
+      "name": "Black Trousers",
+      "color": "Black"
+    },
+    "shoes": {
+      "name": "Brown Loafers",
+      "color": "Brown"
+    },
+    "tags": ["formal", "bold"],
+    "images": {
+      "top": "https://i.pinimg.com/1200x/0b/6c/3d/0b6c3d4d86faf2b0b3a4da3025c2aaa6.jpg",
+      "bottom": "https://i.pinimg.com/1200x/d4/8f/22/d48f229d4bc780a746ab31cb886a4451.jpg",
+      "shoes": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Loafer_shoes_for_men.jpg",
+      "outfit": null
+    }
+  },
+  {
+    "top": {
+      "name": "White Tee",
+      "color": "White"
+    },
+    "bottom": {
+      "name": "Khaki Chinos",
+      "color": "Khaki"
+    },
+    "shoes": {
+      "name": "White Formal Shoes",
+      "color": "White"
+    },
+    "tags": ["hot", "casual", "formal", "minimal"],
+    "images": {
+      "top": "https://upload.wikimedia.org/wikipedia/commons/0/0a/White_tee.jpg",
+      "bottom": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Chino_pants.jpg",
+      "shoes": "https://i.pinimg.com/1200x/42/59/6d/42596d4d091a3f95e967525085caa6cb.jpg",
+      "outfit": null
+    }
+  },
+  {
+    "top": {
+      "name": "Grey Hoodie",
+      "color": "Grey"
+    },
+    "bottom": {
+      "name": "Black Trousers",
+      "color": "Black"
+    },
+    "shoes": {
+      "name": "Black Converse Sneakers",
+      "color": "Black"
+    },
+    "tags": ["cold", "rainy", "casual", "formal"],
+    "images": {
+      "top": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Blonde_girl_wearing_a_grey_hoodie_in_front_of_the_sea_%2852773562842%29.jpg",
+      "bottom": "https://i.pinimg.com/1200x/d4/8f/22/d48f229d4bc780a746ab31cb886a4451.jpg",
+      "shoes": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Black_Converse_sneakers.JPG",
+      "outfit": null
+    }
+  },
+  {
+    "top": {
+      "name": "Pink Top",
+      "color": "Pink"
+    },
+    "bottom": {
+      "name": "Blue Jeans",
+      "color": "Blue"
+    },
+    "shoes": {
+      "name": "Brown Loafers",
+      "color": "Brown"
+    },
+    "tags": ["hot", "casual", "formal", "bold"],
+    "images": {
+      "top": "https://i.pinimg.com/1200x/05/78/14/0578148b0f670df28db7344eca17c26a.jpg",
+      "bottom": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Jeans.jpg",
+      "shoes": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Loafer_shoes_for_men.jpg",
+      "outfit": null
+    }
+  },
+  {
+    "top": {
+      "name": "Red Top",
+      "color": "Red"
+    },
+    "bottom": {
+      "name": "Khaki Chinos",
+      "color": "Khaki"
+    },
+    "shoes": {
+      "name": "White Sneakers",
+      "color": "White"
+    },
+    "tags": ["hot", "casual", "bold", "neutral"],
+    "images": {
+      "top": "https://i.pinimg.com/1200x/0b/6c/3d/0b6c3d4d86faf2b0b3a4da3025c2aaa6.jpg",
+      "bottom": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Chino_pants.jpg",
+      "shoes": "https://upload.wikimedia.org/wikipedia/commons/1/17/White_sneakers.jpg",
+      "outfit": null
+    }
+  },
+  {
+    "top": {
+      "name": "White Tee",
       "color": "White"
     },
     "bottom": {
@@ -717,36 +705,159 @@
       "name": "Brown Loafers",
       "color": "Brown"
     },
-    "tags": ["hot", "formal", "neutral"]
+    "tags": ["hot", "casual", "formal", "minimal"],
+    "images": {
+      "top": "https://upload.wikimedia.org/wikipedia/commons/0/0a/White_tee.jpg",
+      "bottom": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Jeans.jpg",
+      "shoes": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Loafer_shoes_for_men.jpg",
+      "outfit": null
+    }
   },
   {
     "top": {
-      "name": "Blue Sweater",
-      "color": "Blue"
+      "name": "Grey Hoodie",
+      "color": "Grey"
     },
     "bottom": {
-      "name": "White Shorts",
-      "color": "White"
+      "name": "Khaki Chinos",
+      "color": "Khaki"
     },
     "shoes": {
-      "name": "Black Boots",
-      "color": "Black"
+      "name": "White Formal Shoes",
+      "color": "White"
     },
-    "tags": ["cold", "bold", "formal"]
+    "tags": ["cold", "formal", "minimal", "neutral"],
+    "images": {
+      "top": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Blonde_girl_wearing_a_grey_hoodie_in_front_of_the_sea_%2852773562842%29.jpg",
+      "bottom": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Chino_pants.jpg",
+      "shoes": "https://i.pinimg.com/1200x/42/59/6d/42596d4d091a3f95e967525085caa6cb.jpg",
+      "outfit": null
+    }
   },
   {
     "top": {
-      "name": "White Shirt",
+      "name": "Red Top",
+      "color": "Red"
+    },
+    "bottom": {
+      "name": "Khaki Cargo Pants",
+      "color": "Khaki"
+    },
+    "shoes": {
+      "name": "Black Converse Sneakers",
+      "color": "Black"
+    },
+    "tags": ["casual", "bold"],
+    "images": {
+      "top": "https://i.pinimg.com/1200x/0b/6c/3d/0b6c3d4d86faf2b0b3a4da3025c2aaa6.jpg",
+      "bottom": "https://upload.wikimedia.org/wikipedia/commons/4/43/Khaki_Cargo_Pants_Back.jpg",
+      "shoes": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Black_Converse_sneakers.JPG",
+      "outfit": null
+    }
+  },
+  {
+    "top": {
+      "name": "White Tee",
       "color": "White"
     },
     "bottom": {
-      "name": "Black Skirt",
+      "name": "Khaki Cargo Pants",
+      "color": "Khaki"
+    },
+    "shoes": {
+      "name": "Brown Loafers",
+      "color": "Brown"
+    },
+    "tags": ["hot", "casual", "formal", "minimal"],
+    "images": {
+      "top": "https://upload.wikimedia.org/wikipedia/commons/0/0a/White_tee.jpg",
+      "bottom": "https://upload.wikimedia.org/wikipedia/commons/4/43/Khaki_Cargo_Pants_Back.jpg",
+      "shoes": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Loafer_shoes_for_men.jpg",
+      "outfit": null
+    }
+  },
+  {
+    "top": {
+      "name": "Grey Hoodie",
+      "color": "Grey"
+    },
+    "bottom": {
+      "name": "Blue Jeans",
+      "color": "Blue"
+    },
+    "shoes": {
+      "name": "Brown Loafers",
+      "color": "Brown"
+    },
+    "tags": ["cold", "casual", "formal", "neutral"],
+    "images": {
+      "top": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Blonde_girl_wearing_a_grey_hoodie_in_front_of_the_sea_%2852773562842%29.jpg",
+      "bottom": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Jeans.jpg",
+      "shoes": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Loafer_shoes_for_men.jpg",
+      "outfit": null
+    }
+  },
+  {
+    "top": {
+      "name": "Pink Top",
+      "color": "Pink"
+    },
+    "bottom": {
+      "name": "Black Trousers",
       "color": "Black"
     },
     "shoes": {
-      "name": "Blue Sandals",
-      "color": "Blue"
+      "name": "White Sneakers",
+      "color": "White"
     },
-    "tags": ["formal", "rainy", "neutral"]
+    "tags": ["casual", "formal", "bold", "neutral"],
+    "images": {
+      "top": "https://i.pinimg.com/1200x/05/78/14/0578148b0f670df28db7344eca17c26a.jpg",
+      "bottom": "https://i.pinimg.com/1200x/d4/8f/22/d48f229d4bc780a746ab31cb886a4451.jpg",
+      "shoes": "https://upload.wikimedia.org/wikipedia/commons/1/17/White_sneakers.jpg",
+      "outfit": null
+    }
+  },
+  {
+    "top": {
+      "name": "Red Top",
+      "color": "Red"
+    },
+    "bottom": {
+      "name": "Black Trousers",
+      "color": "Black"
+    },
+    "shoes": {
+      "name": "White Sneakers",
+      "color": "White"
+    },
+    "tags": ["casual", "formal", "bold", "neutral"],
+    "images": {
+      "top": "https://i.pinimg.com/1200x/0b/6c/3d/0b6c3d4d86faf2b0b3a4da3025c2aaa6.jpg",
+      "bottom": "https://i.pinimg.com/1200x/d4/8f/22/d48f229d4bc780a746ab31cb886a4451.jpg",
+      "shoes": "https://upload.wikimedia.org/wikipedia/commons/1/17/White_sneakers.jpg",
+      "outfit": null
+    }
+  },
+  {
+    "top": {
+      "name": "White Tee",
+      "color": "White"
+    },
+    "bottom": {
+      "name": "Black Trousers",
+      "color": "Black"
+    },
+    "shoes": {
+      "name": "Brown Loafers",
+      "color": "Brown"
+    },
+    "tags": ["hot", "casual", "formal", "minimal"],
+    "images": {
+      "top": "https://upload.wikimedia.org/wikipedia/commons/0/0a/White_tee.jpg",
+      "bottom": "https://i.pinimg.com/1200x/d4/8f/22/d48f229d4bc780a746ab31cb886a4451.jpg",
+      "shoes": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Loafer_shoes_for_men.jpg",
+      "outfit": null
+    }
   }
 ]

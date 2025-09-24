@@ -273,17 +273,38 @@ export default function Recommend() {
 
                   {/* body */}
                   <div className="p-4">
-                    {/* pseudo look tiles */}
+                    {/* hero outfit image (if provided) */}
+                    {sug.images?.outfit && (
+                      <img
+                        src={sug.images.outfit}
+                        alt="Outfit preview"
+                        loading="lazy"
+                        className="w-full aspect-[16/9] object-cover rounded-xl mb-3"
+                      />
+                    )}
+
+                    {/* piece thumbnails with fallback to emojis */}
                     <div className="grid grid-cols-3 gap-2 mb-3">
-                      <div className="aspect-square rounded-xl bg-gray-100 flex items-center justify-center text-2xl">
-                        👕
-                      </div>
-                      <div className="aspect-square rounded-xl bg-gray-100 flex items-center justify-center text-2xl">
-                        👖
-                      </div>
-                      <div className="aspect-square rounded-xl bg-gray-100 flex items-center justify-center text-2xl">
-                        👟
-                      </div>
+                      {["top", "bottom", "shoes"].map((part, i) => {
+                        const src = sug.images?.[part];
+                        const fallback = ["👕", "👖", "👟"][i];
+                        return src ? (
+                          <img
+                            key={part}
+                            src={src}
+                            alt={`${part} image`}
+                            loading="lazy"
+                            className="aspect-square object-cover rounded-xl border"
+                          />
+                        ) : (
+                          <div
+                            key={part}
+                            className="aspect-square rounded-xl bg-gray-100 flex items-center justify-center text-2xl"
+                          >
+                            {fallback}
+                          </div>
+                        );
+                      })}
                     </div>
 
                     {/* details */}
