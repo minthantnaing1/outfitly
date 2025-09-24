@@ -271,7 +271,7 @@ function detectKeywords(message) {
 
   // "I'm in ..." / "location: ..."
   const cityMatch1 = lowerMessage.match(
-    /(?:i'm in |im in |i am going to| i am in |location:\s*)([a-zA-Z\s,]+?)(?:\s+(?:for|to|at|in|on|during|because|since|while|when|where|with|without|about|after|before|until|through)\s|$)/i
+    /(?:i'm in |im in |i am going to|what about| i am in |location:\s*)([a-zA-Z\s,]+?)(?:\s+(?:for|to|at|in|on|during|because|since|while|when|where|with|without|about|after|before|until|through)\s|$)/i
   );
   if (cityMatch1) {
     const c = cleanCityLite(cityMatch1[1]);
