@@ -20,6 +20,21 @@ function getLastAssistantContext(messages = []) {
   return null;
 }
 
+function mockLayerAdvice(weather) {
+  const t = Number(weather?.temperature ?? NaN);
+  const d = (weather?.description || "").toLowerCase();
+
+  if (!Number.isFinite(t)) {
+    // no weather — generic nudge
+    return "Since I can’t see live weather, I’d bring a light layer just in case.";
+  }
+
+  if (t <= 12) return `It’s quite cool (~${t}°C, ${d}). Add tights, a warm cardigan or cropped jacket, and closed-toe shoes.`;
+  if (t <= 18) return `It’s a bit brisk (~${t}°C, ${d}). Layer with a light jacket or cardigan; consider socks or boots.`;
+  if (t <= 26) return `Mild (~${t}°C, ${d}). Your outfit works—bring a light layer for wind or evening.`;
+  return `Warm (~${t}°C, ${d}). Keep it breezy; swap to lighter fabrics and skip heavy layers.`;
+}
+
 function isJsonResponse(res) {
   const ct = res.headers.get("content-type") || "";
   return ct.includes("application/json");
@@ -256,7 +271,7 @@ function detectKeywords(message) {
 
   // "I'm in ..." / "location: ..."
   const cityMatch1 = lowerMessage.match(
-    /(?:i'm in |im in |i am in |location:\s*)([a-zA-Z\s,]+?)(?:\s+(?:for|to|at|in|on|during|because|since|while|when|where|with|without|about|after|before|until|through)\s|$)/i
+    /(?:i'm in |im in |i am going to| i am in |location:\s*)([a-zA-Z\s,]+?)(?:\s+(?:for|to|at|in|on|during|because|since|while|when|where|with|without|about|after|before|until|through)\s|$)/i
   );
   if (cityMatch1) {
     const c = cleanCityLite(cityMatch1[1]);
@@ -665,6 +680,209 @@ function getMoodOutfitRecommendation(mood, weather) {
   }
 }
 
+// export async function POST(req) {
+//   const replyParts = [];
+//   let messages;
+
+//   try {
+//     const body = await req.json();
+//     messages = body.messages;
+//   } catch (err) {
+//     console.error("❌ Failed to parse JSON body", err);
+//     return new Response(JSON.stringify({ error: "Invalid JSON" }), {
+//       status: 400,
+//       headers: { "Content-Type": "application/json" },
+//     });
+//   }
+
+//   const lastUserMessage = messages[messages.length - 1];
+//   const uploadedFiles = lastUserMessage?.data?.files || [];
+//   let lastImageForm = null;
+
+//   if (uploadedFiles.length > 0) {
+//     for (const file of uploadedFiles) {
+//       if (file.type === "file" && file.mediaType.startsWith("image/")) {
+//         try {
+//           const base64Data = file.url.split(",")[1];
+//           const buffer = Buffer.from(base64Data, "base64");
+//           const blob = new Blob([buffer], { type: file.mediaType });
+
+//           const form = new FormData();
+//           form.append("image", blob, "outfit.jpg");
+//           lastImageForm = form;
+
+//           const resp1 = await callAnalyzeEndpoint(
+//             process.env.ANALYZE_URL || "https://d38fb44458dc.ngrok-free.app/analyze",
+//             form
+//           );
+
+//           if (resp1.ok) {
+//             const d = resp1.data || {};
+//             const items = d.items || d.detected_items || [];
+//             replyParts.push({
+//               type: "text",
+//               content: items.length
+//                 ? `📸 Based on your image, I detected: ${items.join(", ")}`
+//                 : "I analyzed your image but couldn’t detect items confidently.",
+//             });
+//           } else {
+//             console.error("Analyze (ngrok) failed:", resp1.error, resp1.detail);
+//           }
+//         } catch (error) {
+//           console.error("Image analysis error (analyze-outfit):", error);
+//           replyParts.push({ type: "text", content: "⚠️ Image analysis failed." });
+//         }
+//       }
+//     }
+//   }
+
+//   if (process.env.NODE_ENV === "development" && lastImageForm) {
+//     try {
+//       const resp2 = await callAnalyzeEndpoint(
+//         process.env.LOCAL_ANALYZE_URL || "http://127.0.0.1:5001/analyze-outfit",
+//         lastImageForm
+//       );
+//       if (resp2.ok) {
+//         const d2 = resp2.data || {};
+//         const items2 = d2.items || d2.detected_items || [];
+//         if (items2.length) {
+//           replyParts.push({ type: "text", content: `🎯 Extra analysis: ${items2.join(", ")}` });
+//         }
+//       } else {
+//         console.error("Analyze (local) failed:", resp2.error, resp2.detail);
+//       }
+//     } catch (error) {
+//       console.error("Image analysis error (analyze):", error);
+//       replyParts.push({ type: "text", content: "⚠️ Sorry, secondary analysis failed." });
+//     }
+//   }
+
+//   const lastMessage = (lastUserMessage?.content || "").toLowerCase();
+//   const userLocation = lastUserMessage?.location;
+//   const host = req.headers.get("host");
+//   const protocol = process.env.NODE_ENV === "development" ? "http" : "https";
+//   const baseUrl = `${protocol}://${host}`;
+//   const randomPage = Math.floor(Math.random() * 10) + 1;
+
+//   const detectedKeywords = detectKeywords(lastMessage);
+//   let weatherData = null;
+
+//   /* ---------------------------- mood-first branch ---------------------------- */
+//   {
+//     const mood = detectMood(lastMessage);
+//     if (mood) {
+//       let city = detectedKeywords.cities?.[0] || null;
+//       if (!city && userLocation) {
+//         if (typeof userLocation === "string") city = userLocation;
+//         else if (typeof userLocation === "object" && userLocation.city) city = userLocation.city;
+//       }
+
+//       if (city) {
+//         try {
+//           const weatherResponse = await fetch(`${baseUrl}/api/weather?city=${encodeURIComponent(city)}`);
+//           if (weatherResponse.ok) {
+//             const weatherJson = await weatherResponse.json();
+//             weatherData = weatherJson.weather;
+//           }
+//         } catch (err) {
+//           console.error("🌤️ Weather fetch (mood-first) failed:", err);
+//         }
+//       }
+
+//       const moodRec = getMoodOutfitRecommendation(mood, weatherData);
+//       if (moodRec) {
+//         const cityTail = city ? ` (based on ${city} weather)` : "";
+//         replyParts.push({
+//           type: "text",
+//           content: `I hear you — you’re feeling ${mood}. ${moodRec.recommendation}${cityTail}`,
+//         });
+
+//         const images = await fetchOutfitImages(moodRec.searchQuery, null, baseUrl, randomPage);
+//         if (images.length > 0) {
+//           replyParts.push({ type: "text", content: "Here are some ideas that match your mood + weather:" });
+//           images.forEach((img) => replyParts.push({ type: "image", url: img.src || img.url, alt: img.alt }));
+//         } else {
+//           replyParts.push({ type: "text", content: "I couldn’t pull images right now, but those pieces will work well together." });
+//         }
+
+//         return new Response(
+//           JSON.stringify({ id: Date.now().toString(), role: "assistant", content: replyParts }),
+//           { status: 200, headers: { "Content-Type": "application/json" } }
+//         );
+//       }
+//     }
+//   }
+
+//   /* ------------------------------ greeting branch ----------------------------- */
+//   if (lastMessage.includes("hi") || lastMessage.includes("hello") || lastMessage.includes("hey")) {
+//     replyParts.push({
+//       type: "text",
+//       content:
+//         "👋 Hi there! I'm Outfitly, your AI stylist. I can help pick outfits based on weather, occasions, or even your photos. How can I help you today?",
+//     });
+//   } else if (
+//     detectedKeywords.cities.length > 0 ||
+//     detectedKeywords.weather.length > 0 ||
+//     detectedKeywords.occasions.length > 0 ||
+//     detectedKeywords.themes.length > 0
+//   ) {
+//     if (detectedKeywords.cities.length > 0) {
+//       try {
+//         const city = detectedKeywords.cities[0];
+//         const weatherResponse = await fetch(`${baseUrl}/api/weather?city=${encodeURIComponent(city)}`);
+//         if (weatherResponse.ok) {
+//           const weatherJson = await weatherResponse.json();
+//           weatherData = weatherJson.weather;
+//         }
+//       } catch (err) {
+//         console.error("🌤️ Weather fetch failed:", err);
+//       }
+//     }
+
+//     let recommendation = "";
+//     let searchQuery = "";
+
+//     if (detectedKeywords.themes.length > 0) {
+//       const themeRec = getThemeOutfitRecommendation(detectedKeywords.themes, weatherData);
+//       if (themeRec) {
+//         recommendation = themeRec.recommendation;
+//         searchQuery = themeRec.searchQuery;
+//         if (weatherData) {
+//           recommendation += ` Suitable for ${weatherData.temperature}°C and ${weatherData.description}`;
+//         }
+//       }
+//     } else if (detectedKeywords.occasions.length > 0) {
+//       const occ = detectedKeywords.occasions[0];
+//       // keep your old occasion functions if you had them; falling back to weather rec otherwise
+//       const rec = getWeatherOutfitRecommendation(weatherData || { temperature: 22, description: "mild" });
+//       recommendation = rec.recommendation;
+//       searchQuery = rec.searchQuery;
+//     } else if (detectedKeywords.weather.length > 0 || weatherData) {
+//       const weather = weatherData || { temperature: 22, description: detectedKeywords.weather.join(", ") };
+//       const rec = getWeatherOutfitRecommendation(weather);
+//       recommendation = rec.recommendation;
+//       searchQuery = rec.searchQuery;
+//     }
+
+//     const images = await fetchOutfitImages(searchQuery, null, baseUrl, randomPage);
+//     if (images.length > 0) {
+//       replyParts.push({ type: "text", content: recommendation });
+//       replyParts.push({ type: "text", content: "Here are some outfit inspirations for you:" });
+//       images.forEach((img) => replyParts.push({ type: "image", url: img.src || img.url, alt: img.alt }));
+//     } else {
+//       replyParts.push({ type: "text", content: `${recommendation}\n\nNo outfit images available right now. Try again later!` });
+//     }
+//   } else {
+//     replyParts.push({ type: "text", content: `🧠 I didn’t catch a specific theme, weather, or city. You can also upload an image!` });
+//   }
+
+  
+//   return new Response(
+//     JSON.stringify({ id: Date.now().toString(), role: "assistant", content: replyParts }),
+//     { status: 200, headers: { "Content-Type": "application/json" } }
+//   );
+// }
+
 export async function POST(req) {
   const replyParts = [];
   let messages;
@@ -684,6 +902,7 @@ export async function POST(req) {
   const uploadedFiles = lastUserMessage?.data?.files || [];
   let lastImageForm = null;
 
+  // ---------- optional image analysis (kept intact) ----------
   if (uploadedFiles.length > 0) {
     for (const file of uploadedFiles) {
       if (file.type === "file" && file.mediaType.startsWith("image/")) {
@@ -742,6 +961,7 @@ export async function POST(req) {
     }
   }
 
+  // ---------- common request context ----------
   const lastMessage = (lastUserMessage?.content || "").toLowerCase();
   const userLocation = lastUserMessage?.location;
   const host = req.headers.get("host");
@@ -752,7 +972,69 @@ export async function POST(req) {
   const detectedKeywords = detectKeywords(lastMessage);
   let weatherData = null;
 
-  /* ---------------------------- mood-first branch ---------------------------- */
+  /* ----------------- MOCK: “Can I wear this in <city>?” quick answer -----------------
+     This does NOT actually detect garments; we mock a denim short dress + sneakers,
+     fetch weather for the city, add advice, and send a few inspo images.
+  ------------------------------------------------------------------------------- */
+  {
+    // Find city from text or saved location
+    let city = detectedKeywords.cities?.[0] || null;
+    if (!city && userLocation) {
+      if (typeof userLocation === "string") city = userLocation;
+      else if (typeof userLocation === "object" && userLocation.city) city = userLocation.city;
+    }
+
+    // trigger phrases
+    const askedCanIWear = /\b(can\s+i\s+wear|is\s+this\s+okay|fit\s+for)\b/i.test(
+      lastUserMessage?.content || ""
+    );
+
+    if (city && askedCanIWear) {
+      // Best-effort weather
+      try {
+        const weatherRes = await fetch(`${baseUrl}/api/weather?city=${encodeURIComponent(city)}`);
+        if (weatherRes.ok) {
+          const weatherJson = await weatherRes.json();
+          weatherData = weatherJson.weather;
+        }
+      } catch (err) {
+        console.error("🌤️ Mock branch weather fetch failed:", err);
+      }
+
+      // ⚠️ Mock outfit (no CV)
+      const mockItems = ["denim short dress", "sneakers"];
+
+      replyParts.push({
+        type: "text",
+        content: `You're planning to wear a **${mockItems[0]}** with **${mockItems[1]}** in **${city}**.`,
+      });
+
+      replyParts.push({
+        type: "text",
+        content: `My take: ${mockLayerAdvice(weatherData)}`,
+      });
+
+      replyParts.push({
+        type: "text",
+        content:
+          "Style tip: add a crossbody bag and simple jewelry; if it’s windy or rainy, swap sneakers for water-resistant shoes.",
+      });
+
+      // a few inspo images to match the vibe
+      const q = `${city} layered denim street style women`;
+      const images = await fetchOutfitImages(q, null, baseUrl, Math.floor(Math.random() * 5) + 1);
+      images.slice(0, 4).forEach((img, i) =>
+        replyParts.push({ type: "image", url: img.src || img.url, alt: `outfit inspo ${i + 1}` })
+      );
+
+      return new Response(
+        JSON.stringify({ id: Date.now().toString(), role: "assistant", content: replyParts }),
+        { status: 200, headers: { "Content-Type": "application/json" } }
+      );
+    }
+  }
+
+  /* ---------------------------- mood-first branch (kept) ---------------------------- */
   {
     const mood = detectMood(lastMessage);
     if (mood) {
@@ -798,7 +1080,7 @@ export async function POST(req) {
     }
   }
 
-  /* ------------------------------ greeting branch ----------------------------- */
+  /* ------------------------------ greeting/keywords (kept) ----------------------------- */
   if (lastMessage.includes("hi") || lastMessage.includes("hello") || lastMessage.includes("hey")) {
     replyParts.push({
       type: "text",
@@ -837,8 +1119,6 @@ export async function POST(req) {
         }
       }
     } else if (detectedKeywords.occasions.length > 0) {
-      const occ = detectedKeywords.occasions[0];
-      // keep your old occasion functions if you had them; falling back to weather rec otherwise
       const rec = getWeatherOutfitRecommendation(weatherData || { temperature: 22, description: "mild" });
       recommendation = rec.recommendation;
       searchQuery = rec.searchQuery;
@@ -861,7 +1141,6 @@ export async function POST(req) {
     replyParts.push({ type: "text", content: `🧠 I didn’t catch a specific theme, weather, or city. You can also upload an image!` });
   }
 
-  
   return new Response(
     JSON.stringify({ id: Date.now().toString(), role: "assistant", content: replyParts }),
     { status: 200, headers: { "Content-Type": "application/json" } }
