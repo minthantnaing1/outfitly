@@ -1,22 +1,18 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import wardrobeData from "../data/wardrobe_data.json";
 
 export default function WardrobePage() {
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState(wardrobeData);
+
   const [form, setForm] = useState({
     weather: "",
     occasion: "",
     mood: "",
     k: 3,
   });
-  const [outfits, setOutfits] = useState([]);
 
-  useEffect(() => {
-    fetch("/wardrobe_data.json")
-      .then((res) => res.json())
-      .then((data) => setItems(data))
-      .catch((err) => console.error("Failed to load wardrobe data:", err));
-  }, []);
+  const [outfits, setOutfits] = useState([]);
 
   const handleDelete = (id) => {
     setItems((prev) => prev.filter((item) => item.id !== id));
@@ -25,8 +21,7 @@ export default function WardrobePage() {
   const handleChange = (e) => {
     setForm((prev) => ({
       ...prev,
-      [e.target.name]:
-        e.target.name === "k" ? parseInt(e.target.value) : e.target.value,
+      [e.target.name]: e.target.name === "k" ? parseInt(e.target.value) : e.target.value,
     }));
   };
 
@@ -59,20 +54,14 @@ export default function WardrobePage() {
     <div className="min-h-screen bg-white px-6 py-10">
       <h1 className="text-3xl font-bold text-center text-pink-600 mb-6">
         Wardrobe Suggestion
+        
       </h1>
 
       {/* FORM */}
       <div className="max-w-3xl mx-auto bg-pink-50 p-6 rounded-lg shadow mb-10">
-        <h2 className="text-xl font-semibold mb-4 text-center">
-          Get Outfit Suggestions
-        </h2>
+        <h2 className="text-xl font-semibold mb-4 text-center"> Get Outfit Suggestions</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-          <select
-            name="weather"
-            value={form.weather}
-            onChange={handleChange}
-            className="border p-2 rounded"
-          >
+          <select name="weather" value={form.weather} onChange={handleChange} className="border p-2 rounded">
             <option value="">Select Weather</option>
             <option value="Summer">Summer</option>
             <option value="Winter">Winter</option>
@@ -81,12 +70,7 @@ export default function WardrobePage() {
             <option value="Warm">Warm</option>
           </select>
 
-          <select
-            name="occasion"
-            value={form.occasion}
-            onChange={handleChange}
-            className="border p-2 rounded"
-          >
+          <select name="occasion" value={form.occasion} onChange={handleChange} className="border p-2 rounded">
             <option value="">Select Occasion</option>
             <option value="Casual">Casual</option>
             <option value="Party">Party</option>
@@ -94,12 +78,7 @@ export default function WardrobePage() {
             <option value="Date">Date</option>
           </select>
 
-          <select
-            name="mood"
-            value={form.mood}
-            onChange={handleChange}
-            className="border p-2 rounded"
-          >
+          <select name="mood" value={form.mood} onChange={handleChange} className="border p-2 rounded">
             <option value="">Select Mood</option>
             <option value="Happy">Happy</option>
             <option value="Active">Active</option>
@@ -127,15 +106,11 @@ export default function WardrobePage() {
       {/* OUTFIT SUGGESTIONS */}
       {outfits.length > 0 && (
         <div className="max-w-5xl mx-auto mb-12">
-          <h2 className="text-2xl font-semibold text-center mb-6 text-pink-600">
-            Suggested Outfits
-          </h2>
+          <h2 className="text-2xl font-semibold text-center mb-6 text-pink-600"> Suggested Outfits</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {outfits.map((set, i) => (
               <div key={i} className="border rounded p-4 shadow-md">
-                <p className="mb-2 font-semibold">
-                  Outfit #{i + 1} (Score: {set.score})
-                </p>
+                <p className="mb-2 font-semibold">Outfit #{i + 1} (Score: {set.score})</p>
                 <div className="flex justify-around">
                   {[set.top, set.bottom, set.shoes].map((item, idx) => (
                     <div key={idx} className="flex flex-col items-center">
@@ -145,9 +120,7 @@ export default function WardrobePage() {
                         className="w-[80px] h-[100px] object-cover mb-1"
                       />
                       <span className="font-medium">{item.type}</span>
-                      <span className="text-sm text-gray-500">
-                        {item.color}
-                      </span>
+                      <span className="text-sm text-gray-500">{item.color}</span>
                     </div>
                   ))}
                 </div>
@@ -158,9 +131,7 @@ export default function WardrobePage() {
       )}
 
       {/* CURRENT WARDROBE DISPLAY */}
-      <h2 className="text-2xl font-semibold text-center mb-6 text-pink-600">
-        🚪 My Wardrobe
-      </h2>
+      <h2 className="text-2xl font-semibold text-center mb-6 text-pink-600">🚪 My Wardrobe</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
         {items.map((item) => (
           <div
