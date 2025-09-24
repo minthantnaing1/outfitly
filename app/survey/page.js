@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // export default function Survey() {
 //   return (
 //     <main className="p-6">
@@ -6,6 +7,8 @@
 //     </main>
 //   );
 // }
+=======
+>>>>>>> origin/AllMerged
 export default function Survey() {
   return (
     <main className="p-6">

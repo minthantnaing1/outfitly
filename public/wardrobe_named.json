@@ -1,5 +1,6 @@
 [
   {
+<<<<<<< HEAD
     "id": 1,
     "type": "bottom",
     "name": "Black Cargo Pants",
@@ -1097,3 +1098,68 @@
     ]
   }
 ]
+=======
+    "id": "t1",
+    "name": "White Shirt",
+    "color": "White",
+    "type": "top",
+    "style": ["hot", "formal", "minimal"]
+  },
+  {
+    "id": "t2",
+    "name": "Black T-Shirt",
+    "color": "Black",
+    "type": "top",
+    "style": ["hot", "casual", "bold"]
+  },
+  {
+    "id": "t3",
+    "name": "Grey Hoodie",
+    "color": "Grey",
+    "type": "top",
+    "style": ["cold", "casual", "neutral"]
+  },
+  {
+    "id": "b1",
+    "name": "Blue Jeans",
+    "color": "Blue",
+    "type": "bottom",
+    "style": ["cold", "casual", "neutral"]
+  },
+  {
+    "id": "b2",
+    "name": "Black Skirt",
+    "color": "Black",
+    "type": "bottom",
+    "style": ["hot", "formal", "bold"]
+  },
+  {
+    "id": "b3",
+    "name": "White Shorts",
+    "color": "White",
+    "type": "bottom",
+    "style": ["hot", "party", "minimal"]
+  },
+  {
+    "id": "s1",
+    "name": "Sneakers",
+    "color": "White",
+    "type": "shoes",
+    "style": ["casual", "neutral"]
+  },
+  {
+    "id": "s2",
+    "name": "Black Boots",
+    "color": "Black",
+    "type": "shoes",
+    "style": ["cold", "formal", "bold"]
+  },
+  {
+    "id": "s3",
+    "name": "Sandals",
+    "color": "Beige",
+    "type": "shoes",
+    "style": ["hot", "party", "minimal"]
+  }
+]
+>>>>>>> origin/AllMerged

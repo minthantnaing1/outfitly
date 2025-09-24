@@ -1,6 +1,32 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/AllMerged
 @import "tailwindcss";
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+<<<<<<< HEAD
+=======
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeUp {
+  animation: fadeUp 0.6s ease-out forwards;
+}
+
+/* Smooth hover effect */
+.hover\:scale-\[1\.02\] {
+  transform: scale(1.02);
+>>>>>>> origin/AllMerged
 }

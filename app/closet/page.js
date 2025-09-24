@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // "use client";
 // import { useState } from "react";
 
@@ -35,6 +36,8 @@
 //     </main>
 //   );
 // }
+=======
+>>>>>>> origin/AllMerged
 "use client";
 import { useState } from "react";
 

@@ -18,5 +18,4 @@ const nextConfig = {
     unoptimized: true, // Keep this for now to simplify debugging if issues persist
   },
 };
-
 export default nextConfig;
